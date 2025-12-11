@@ -1,0 +1,44 @@
+#  Daily Self-Assessment
+
+```
+= Daily Self-Assessment
+
+== Purpose
+
+The Daily Self-Assessment is designed to reinforce your understanding of the day's learning objectives and to encourage regular practice. It includes both conceptual questions and hands-on tasks to ensure a comprehensive grasp of the topics covered.
+
+== Questions
+
+1. **Conceptual Question:**
+   What is the primary function of the kn workflow CLI in the context of OpenShift Serverless Logic?
+
+   **Answer:**
+   The kn workflow CLI is a command-line tool used to manage and execute Quarkus workflow projects locally. It simplifies the process of creating, deploying, and testing serverless workflows on OpenShift Serverless.
+
+2. **Conceptual Question:**
+   Explain the difference between the Dev, Preview, and GitOps profiles in OpenShift Serverless.
+
+   **Answer:**
+   - **Dev Profile:** This profile is ideal for development and testing. It allows for rapid iteration and easy debugging. Changes made in the Dev environment are not automatically promoted, providing developers with control over when to move to the next stage.
+   - **Preview Profile:** This profile is used for staging or pre-production environments. It allows for more formal testing and review of changes before they are promoted to production.
+   - **GitOps Profile:** This profile is designed for production deployments. It ensures that the state of the cluster matches the desired state defined in a Git repository, enabling automated, reliable, and scalable deployments.
+
+3. **Hands-on Task:**
+   - **Task:** Create a new Quarkus workflow project using the kn workflow CLI.
+   - **Instructions:**
+     1. Install the kn workflow CLI if you haven't already.
+     2. Run the command `kn workflow create --name my-workflow --runtime quarkus` to create a new workflow project named 'my-workflow' using the Quarkus runtime.
+     3. Navigate to the project directory with `cd my-workflow`.
+     4. Execute the workflow with `kn workflow run`.
+
+== Explanation and Example
+
+For the hands-on task, when you run `kn workflow run`, you should see the workflow executing and completing successfully. This demonstrates your ability to create and run a basic Quarkus workflow project locally.
+
+== Additional Resources
+
+For more detailed information, refer to the official OpenShift Serverless documentation and the Quarkus workflow CLI GitHub repository.
+
+```
+
+This

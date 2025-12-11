@@ -1,0 +1,89 @@
+#  Code/Config Example
+
+```
+== Deploying with the Dev Profile
+- Concept
+- Real-World Use Case
+- Code/Config Example
+- Daily Self-Assessment
+- Practical To-Do Exercise
+
+== Deploying with the Preview Profile
+- Concept
+- Real-World Use Case
+- Code/Config Example
+- Daily Self-Assessment
+- Practical To-Do Exercise
+
+== The GitOps Profile & Production Deployment
+- Concept
+- Real-World Use Case
+- Code/Config Example
+- Daily Self-Assessment
+- Practical To-Do Exercise
+
+== Integrating External Services (OpenAPI)
+- Concept
+- Real-World Use Case
+- Code/Config Example
+- Daily Self-Assessment
+- Practical To-Do Exercise
+
+== Managing Service Endpoints & Configuration
+- Concept
+- Real-World Use Case
+- Code/Config Example
+- Daily Self-Assessment
+- Practical To-Do Exercise
+
+== Securing Service Calls
+- Concept
+- Real-World Use Case
+- Code/Config Example
+- Daily Self-Assessment
+- Practical To-Do Exercise
+
+== Introduction to Workflow Persistence
+- Concept
+- Real-World Use Case
+- Code/Config Example
+- Daily Self-Assessment
+- Practical To-Do Exercise
+
+== Configuring PostgreSQL for State
+- Concept
+- Real-World Use Case
+- Code/Config Example
+- Daily Self-Assessment
+- Practical To-Do Exercise
+
+== Event-Driven Architecture with Knative
+- Concept
+- Real-World Use Case
+- Code/Config Example
+- Daily Self-Assessment
+- Practical To-Do Exercise
+```
+
+## Code/Config Example: Deploying with the Dev Profile
+
+### Configuration for Dev Profile
+
+To deploy a Quarkus application using the Dev profile on OpenShift Serverless, you need to create a `kn` workflow. Below is an example of such a workflow configuration file named `workflow.yaml`:
+
+```yaml
+apiVersion: tekton.dev/v1beta1
+kind: Pipeline
+metadata:
+  name: my-quarkus-pipeline
+spec:
+  params:
+    - name: IMAGE
+      type: string
+      description: Image reference for the Quarkus application
+    - name: NAMESPACE
+      type: string
+      description: Namespace where the application will be deployed
+  tasks:
+    - name: build-and-push
+      taskRef

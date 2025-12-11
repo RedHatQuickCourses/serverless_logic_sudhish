@@ -1,0 +1,58 @@
+#  Practical To-Do Exercise
+
+```
+= Practical To-Do Exercise
+
+== Deploying with the Dev Profile
+
+**Objective:** To gain hands-on experience in deploying a Quarkus application using the Dev profile on OpenShift Serverless.
+
+**Instructions:**
+
+1. **Set up your environment:**
+   - Ensure you have OpenShift Serverless installed and configured on your OpenShift cluster.
+   - Install the OpenShift Serverless CLI (kn) and Quarkus on your local machine.
+
+2. **Create a Quarkus Project:**
+   - Generate a new Quarkus project using the following command:
+     ```
+     quarkus@1.13.7.Final /home/user> quarkus create app.quarkus
+     ```
+   - Choose the 'RestEasy OpenAPI' quickstart.
+
+3. **Configure the Application:**
+   - Navigate to `src/main/resources/application.properties` and configure the following properties:
+     ```
+     quarkus.http.host = 0.0.0.0
+     quarkus.http.port = ${port:8080}
+     ```
+
+4. **Deploy the Application:**
+   - Use the kn service create command to deploy your application with the Dev profile:
+     ```
+     kn service create --image <your-openshift-registry>/<your-project>/quarkus-app --env PORT=8080 --profile development
+     ```
+   - Replace `<your-openshift-registry>` and `<your-project>` with your actual OpenShift registry and project name.
+
+5. **Test the Deployment:**
+   - Once the deployment is successful, invoke the service using its route to verify if it's working as expected.
+
+**Reflection:**
+
+- What challenges did you encounter during the deployment process?
+- How did you troubleshoot these issues?
+- What are the benefits of using the Dev profile for local development and testing?
+
+== Integrating External Services (OpenAPI)
+
+**Objective:** To practice integrating an external REST API into a Quarkus application using OpenAPI specifications.
+
+**Instructions:**
+
+1. **Choose an External API:**
+   - Select a public REST API that provides data relevant to your interests or project.
+
+2. **Generate OpenAPI Specification:**
+   - Use an online tool or library to generate an OpenAPI specification (in JSON or YAML format) for the chosen API.
+
+3. **Integrate the API in Quark

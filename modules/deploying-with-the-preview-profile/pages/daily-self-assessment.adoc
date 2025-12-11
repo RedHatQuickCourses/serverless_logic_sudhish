@@ -1,0 +1,46 @@
+#  Daily Self-Assessment
+
+```
+= Daily Self-Assessment
+
+== Purpose
+
+The Daily Self-Assessment is designed to reinforce your understanding of the day's learning objectives and to encourage regular practice. It includes both conceptual questions and practical exercises to ensure a comprehensive grasp of the topics covered.
+
+== Daily Self-Assessment Questions and Answers
+
+=== Question 1: What is the primary function of the kn workflow CLI in the context of OpenShift Serverless Logic?
+
+=== Answer 1
+
+The kn workflow CLI is a command-line tool used to manage serverless workflows on OpenShift. Its primary function includes creating, updating, deleting, and executing workflows, as well as managing the lifecycle of Quarkus applications within these workflows. It simplifies the interaction with Knative Serving and Knative Eventing, enabling developers to focus on writing business logic rather than infrastructure management.
+
+=== Question 2: Describe the typical structure of a Quarkus project.
+
+=== Answer 2
+
+A Quarkus project typically has the following structure:
+
+```
+quarkus/
+├── src/
+│   ├── main/
+│   │   ├── java/ (contains the main application logic)
+│   │   └── resources/ (contains configuration files)
+│   └── test/
+│       ├── java/ (contains unit and integration tests)
+│       └── resources/ (contains test-specific resources)
+└── - pom.xml (Maven project configuration file)
+```
+
+=== Question 3: What are the three deployment profiles discussed in the training, and briefly explain their use cases.
+
+=== Answer 3
+
+1. **Dev Profile**: This profile is used for local development and testing. It provides a lightweight, single-node OpenShift environment that closely mimics a production setup, allowing developers to test their applications without the need for a full-scale cluster.
+
+2. **Preview Profile**: This profile is used for staging or pre-production environments. It offers a more production-like setup than the Dev Profile, enabling teams to perform integration testing and user acceptance testing (UAT) before deploying to production.
+
+3. **GitOps Profile**: This profile is used for production deployments and ongoing management. It leverages Git as the single source of truth for the desired state of the system, ensuring that the actual state converges to the desired state through automated processes.
+
+=== Question 4: How can OpenAPI specifications be

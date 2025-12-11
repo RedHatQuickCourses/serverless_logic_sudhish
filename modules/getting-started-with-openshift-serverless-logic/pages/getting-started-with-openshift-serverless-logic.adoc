@@ -1,0 +1,39 @@
+#  Getting Started with OpenShift Serverless Logic
+
+```
+Getting Started with OpenShift Serverless Logic
+===============================================
+
+Concept
+-------
+
+OpenShift Serverless Logic introduces the ability to run serverless applications on OpenShift. It leverages Knative, a Kubernetes-based platform for building, deploying, and managing modern serverless workloads.
+
+Real-World Use Case
+-------------------
+
+This technology is ideal for applications requiring automatic scaling, event-driven processing, and reduced operational management overhead. It's beneficial for microservices, event handling, and applications with unpredictable traffic patterns.
+
+Code/Config Example
+-------------------
+
+A typical Knative service, defined in a `knative.yaml` file, includes:
+
+* `apiVersion`: Specifies the API version.
+* `kind`: Defines the resource type, `Service` in this case.
+* `metadata`: Contains the service name and namespace.
+* `spec`: Holds the configuration for the service, including the container image, environment variables, and resources.
+
+Daily Self-Assessment
+---------------------
+
+* Can you explain what Knative is and how it relates to OpenShift Serverless Logic?
+* How would you set up a basic Knative service?
+
+Practical To-Do Exercise
+------------------------
+
+1. Deploy a simple "Hello, World!" application using OpenShift Serverless Logic.
+2. Trigger the application and observe its automatic scaling.
+3. Modify the application to respond to an HTTP request.
+```

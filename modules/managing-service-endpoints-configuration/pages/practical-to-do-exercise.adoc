@@ -1,0 +1,53 @@
+#  Practical To-Do Exercise
+
+```
+= Practical To-Do Exercise
+
+== Deploying with the Dev Profile
+
+**Objective:** To gain hands-on experience in deploying a Quarkus application using the Dev profile on OpenShift Serverless.
+
+**Instructions:**
+
+1. **Set up your environment:**
+   - Ensure you have OpenShift Serverless installed and configured on your cluster.
+   - Install the OpenShift CLI (oc) and the kn CLI.
+   - Log in to your OpenShift cluster using `oc login`.
+
+2. **Create a Quarkus project:**
+   - Use the Quarkus CLI to generate a new project: `quarkus create my-quarkus-app`.
+   - Navigate to the project directory: `cd my-quarkus-app`.
+
+3. **Configure the Quarkus project for OpenShift Serverless:**
+   - Add the OpenShift Serverless annotations to the `application.properties` file:
+
+     ```
+     knative.openshift.service-class=Passthrough
+     knative.openshift.route.host=my-quarkus-app.example.com
+     ```
+
+4. **Build and push the Quarkus application:**
+   - Build the application: `mvn clean package`.
+   - Create a Docker image: `docker build -t image-registry/<namespace>/<project-name>:<tag> .`
+   - Push the image to your image registry: `docker push image-registry/<namespace>/<project-name>:<tag>`.
+
+5. **Deploy the application using the Dev profile:**
+   - Apply the Knative Service configuration:
+
+     ```
+     kn service create --image image-registry/<namespace>/<project-name>:<tag> --env KNATIVE_DEV=true
+     ```
+
+6. **Test the deployment:**
+   - Get the Knative Service URL: `kn service describe <service-name> --output jsonpath='{.status.url)'.
+   - Access the application using the provided URL.
+
+**Daily Self-Assessment:**
+
+*Q: What is the purpose of using the Dev profile when deploying a Quarkus application on OpenShift Serverless?*
+
+*A: The Dev profile is used for local development and testing of serverless applications. It allows developers to test their applications on their local machines before deploying them to a production-like environment on OpenShift Serverless. This helps in identifying and fixing issues early in the development cycle.*
+
+**Example:**
+
+When deploying a Quarkus application

@@ -1,0 +1,61 @@
+#  Practical To-Do Exercise
+
+```
+= Practical To-Do Exercise
+
+== Deploying with the Dev Profile
+
+**Objective:** To gain hands-on experience in deploying a Quarkus application using the Dev profile on OpenShift Serverless.
+
+**Instructions:**
+
+1. **Set up your environment:**
+   - Ensure you have the OpenShift Serverless installed and configured on your OpenShift cluster.
+   - Install the OpenShift CLI (oc) and the kn CLI.
+   - Clone the provided Quarkus project repository.
+
+2. **Build and Push the Quarkus Image:**
+   - Navigate to the Quarkus project directory.
+   - Build the Quarkus application using the following command:
+     ```
+     mvn clean package -Dquarkus.arc.config-sources=yaml
+     ```
+   - Push the built image to your OpenShift registry:
+     ```
+     oc new-build --strategy=docker --name=quarkus-app . --push-command=docker push
+     ```
+
+3. **Deploy the Application:**
+   - Create a Knative Service using the kn CLI with the Dev profile:
+     ```
+     kn service create quarkus-dev --image <your-openshift-registry>/quarkus-app --profile=dev
+     ```
+   - Verify the deployment with:
+     ```
+     oc get ksvc quarkus-dev
+     ```
+
+4. **Test the Application:**
+   - Get the route URL for your deployed application:
+     ```
+     oc get ksvc quarkus-dev -o jsonpath='{.status.url}'
+     ```
+   - Access the application using the route URL in your web browser.
+
+5. **Scale and Uninstall:**
+   - Scale the application to multiple replicas:
+     ```
+     kn service scale quarkus-dev --replicas=3
+     ```
+   - Uninstall the application when done:
+     ```
+     kn service delete quarkus-dev
+     ```
+
+**Daily Self-Assessment:**
+
+*Q: What is the purpose of using the Dev profile when deploying a Quarkus application on OpenShift Serverless?*
+
+*A: The Dev profile is used for local development and testing. It allows developers to run the application outside of a cluster, which is faster and more resource-efficient for development purposes. It's ideal for writing, testing, and debugging code before deploying to a production-like environment.*
+
+*Example: When you're developing a new feature for your Quarkus application, you would typically use

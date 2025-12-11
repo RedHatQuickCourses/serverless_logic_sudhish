@@ -1,0 +1,43 @@
+#  Daily Self-Assessment
+
+```
+= Daily Self-Assessment
+
+== Purpose
+
+The Daily Self-Assessment is designed to reinforce your understanding of the day's learning objectives and to encourage regular practice. It consists of a series of questions and exercises that you should complete at the end of each day.
+
+== Questions
+
+1. **What is the primary focus of today's learning objective?**
+   *Answer:* Today's learning objective primarily focuses on understanding the Kn workflow Command Line Interface (CLI), the structure of a Quarkus project, and executing it locally.
+
+2. **Explain the role of the Kn workflow CLI in OpenShift Serverless Logic.**
+   *Answer:* The Kn workflow CLI is a command-line tool used to define, execute, and manage serverless workflows on OpenShift. It allows developers to create, update, and delete workflows, as well as invoke them.
+
+3. **Describe the typical structure of a Quarkus project.**
+   *Answer:* A Quarkus project typically includes the following components:
+   - `src/main/java`: Contains the Java source code.
+   - `src/test/java`: Contains the test source code.
+   - `pom.xml`: The Maven build file for the project.
+   - `application.properties`: Configuration file for the application.
+
+4. **How would you execute a Quarkus application locally?**
+   *Answer:* To execute a Quarkus application locally, navigate to the project directory in the terminal and run the command `mvn quarkus:dev`. This will start the application in development mode.
+
+== Exercises
+
+1. **Hands-On: Local Execution of Quarkus Application**
+
+   a. Ensure you have Maven and Java installed on your local machine.
+   b. Clone a Quarkus project from a repository or create a new one using the Quarkus CLI.
+   c. Navigate to the project directory in your terminal.
+   d. Run the command `mvn quarkus:dev` to start the application.
+   e. Open your web browser and navigate to `http://localhost:8080` to see the application in action.
+
+2. **Reflection: Kn Workflow CLI**
+
+   a. Research and list down at least five commands supported by the Kn workflow CLI.
+   b. Write a short paragraph explaining how you would use the 'kn workflow create' command to define a new workflow.
+
+Remember, consistent practice is key to master

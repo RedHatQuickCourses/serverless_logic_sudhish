@@ -1,6 +1,6 @@
 site:
-  title: FIXME Course Title
-  start_page: REPLACEREPONAME::index.adoc
+  title:  Foundations: kn workflow CLI, Quarkus project structure, and local execution.
+  start_page: serverless_logic_sudhish::index.adoc
 
 content:
   sources:

@@ -1,0 +1,13 @@
+#  Concept
+
+```
+= Concept: kn workflow CLI
+
+The kn workflow CLI (Command Line Interface) is a powerful tool designed for managing serverless workflows on OpenShift Serverless. It allows developers to create, execute, and manage serverless workflows locally and on OpenShift. With kn, you can define, test, and deploy your workflows before pushing them to a remote server, ensuring a smooth development and deployment process.
+
+The kn CLI supports the creation of Quarkus projects, which are the building blocks for serverless workflows. Quarkus projects are lightweight, fast, and cloud-native, making them ideal for serverless applications. They follow a specific structure, which includes directories for sources, resources, and test classes, among others.
+
+Moreover, kn facilitates local execution of workflows, enabling developers to simulate the serverless environment on their local machines. This feature is crucial for testing and debugging workflows before they go live.
+
+In summary, the kn workflow CLI is an essential tool for developers working with OpenShift Serverless. It simplifies the process of creating, testing, and deploying serverless workflows, making it an indispensable part of the serverless development workflow.
+```

@@ -1,0 +1,45 @@
+#  Daily Self-Assessment
+
+```
+= Daily Self-Assessment
+
+== Purpose
+
+The Daily Self-Assessment is designed to reinforce your understanding of the day's learning objectives and to encourage regular practice. It consists of a series of questions and exercises that you should complete at the end of each day.
+
+== Questions
+
+1. **What is the primary focus of today's learning objective?**
+   *Answer:* Today's learning objective primarily focuses on understanding the Kn workflow Command Line Interface (CLI), the structure of a Quarkus project, and executing it locally.
+
+2. **Explain the role of the Kn CLI in OpenShift Serverless Logic.**
+   *Answer:* The Kn CLI is a command-line tool used to manage serverless applications on OpenShift. It allows developers to create, deploy, and manage serverless workloads, known as Knative Services, directly from the command line.
+
+3. **Describe the typical structure of a Quarkus project.**
+   *Answer:* A Quarkus project typically includes the following components:
+   - `src/main/java`: Contains the Java source code.
+   - `src/test/java`: Contains the test source code.
+   - `pom.xml`: The Maven build file for the project.
+   - `application.properties`: Configuration file for the application.
+
+4. **How would you execute a Quarkus application locally?**
+   *Answer:* To execute a Quarkus application locally, navigate to the project directory in the terminal and run the command `mvn quarkus:dev`. This will start the application in development mode.
+
+== Exercises
+
+1. **Hands-On: Local Quarkus Execution**
+
+   - Create a new Quarkus project using the Quarkus CLI.
+   - Navigate to the project directory in your terminal.
+   - Execute the application locally using the `mvn quarkus:dev` command.
+   - Verify that the application is running by checking the logs or accessing it via a web browser if it's a web application.
+
+2. **Reflection:**
+
+   - Write a brief summary of what you learned today about the Kn CLI and Quarkus project structure.
+   - Identify any challenges you faced and how you overcame them.
+   - Plan what you will focus on learning tomorrow to build upon today's knowledge.
+
+```
+
+This Daily Self-Assessment is designed to test your understanding of the Kn workflow CLI and Quarkus project structure,

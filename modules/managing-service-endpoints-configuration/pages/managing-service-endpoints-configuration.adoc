@@ -1,0 +1,32 @@
+#  Managing Service Endpoints & Configuration
+
+```
+Managing Service Endpoints & Configuration
+=========================================
+
+Concept
+-------
+
+This section focuses on managing service endpoints and their configurations in the context of OpenShift Serverless Logic. It covers techniques to handle changes in service URLs, versioning, and environment-specific configurations.
+
+Real-World Use Case
+-------------------
+
+In a real-world scenario, an application might need to interact with different environments (development, staging, production) where service endpoints vary. This section will illustrate how to manage these varying endpoints and configurations effectively.
+
+Code/Config Example
+-------------------
+
+* Demonstrating how to define environment-specific configurations using OpenShift ConfigMaps or Secrets.
+* Showcasing techniques to dynamically fetch service endpoints at runtime based on the environment.
+
+Daily Self-Assessment
+---------------------
+
+* Questions to evaluate understanding of managing service endpoints and configurations.
+
+Practical To-Do Exercise
+------------------------
+
+* Hands-on tasks to apply the learned concepts, such as modifying a Quarkus project to use environment-specific service endpoints.
+```

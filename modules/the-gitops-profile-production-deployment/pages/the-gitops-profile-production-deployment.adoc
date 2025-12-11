@@ -1,0 +1,50 @@
+#  The GitOps Profile & Production Deployment
+
+```
+The GitOps Profile & Production Deployment
+=======================================
+
+Concept
+-------
+
+GitOps is a way of implementing Continuous Deployment for cloud-native applications. It leverages Git as the single source of truth for infrastructure and applications. In the context of OpenShift Serverless, the GitOps profile ensures that the production environment is always in sync with the configurations and code stored in a Git repository.
+
+Real-World Use Case
+-------------------
+
+In a production setting, changes to the serverless application need to be deployed reliably and consistently. With GitOps, every change to the application or its configuration is captured in the Git repository. OpenShift Serverless, through its integration with GitOps tools like Argo CD, constantly monitors this repository for changes and automatically applies them to the production environment. This ensures that the production environment mirrors the repository, reducing the risk of human error and enabling seamless rollbacks if needed.
+
+Code/Config Example
+-------------------
+
+Here's a simplified example of how a Kubernetes configuration file (e.g., `knative-service.yaml`) might look for a serverless application deployed using GitOps:
+
+```yaml
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: my-serverless-app
+spec:
+  template:
+    spec:
+      containers:
+      - image: gcr.io/my-project/my-serverless-app
+        env:
+        - name: TARGET
+          value: "Production"
+```
+
+Daily Self-Assessment
+----------------------
+
+* Can you explain what GitOps is and why it's beneficial for production deployments?
+* How would you ensure that your Git repository accurately reflects the desired state of your production environment?
+* What steps would you take to monitor and troubleshoot discrepancies between your Git repository and the actual production state?
+
+Practical To-Do Exercise
+------------------------
+
+1. Set up a Git repository to manage your serverless application's configurations and code.
+2. Configure Argo CD or a similar GitOps tool to synchronize your OpenShift environment with your Git repository.
+3. Make a change to your application's configuration, commit it to the Git repository, and observe how the change is automatically applied to your OpenShift production environment.
+4. Simulate an error (e.g., incorrect configuration) and verify that the GitOps tool detects the discrepancy and attempts

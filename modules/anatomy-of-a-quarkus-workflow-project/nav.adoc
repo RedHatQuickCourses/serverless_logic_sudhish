@@ -1,0 +1,6 @@
+* xref:anatomy-of-a-quarkus-workflow-project.adoc[]
+** xref:concept.adoc[]
+** xref:real-world-use-case.adoc[]
+** xref:codeconfig-example.adoc[]
+** xref:daily-self-assessment.adoc[]
+** xref:practical-to-do-exercise.adoc[]

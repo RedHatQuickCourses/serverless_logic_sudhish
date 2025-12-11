@@ -1,22 +1,41 @@
-= An Example Quick Course
+=  Foundations: kn workflow CLI, Quarkus project structure, and local execution.
 :navtitle: Home
 
 == Introduction
 
-Course Title: Course title FIXME
+Course Title:  Foundations: kn workflow CLI, Quarkus project structure, and local execution.
 
 Description:
 Course description FIXME
 
 Duration: FIXME hours
 
-== Objectives
+== Topics covered in this course
 
-On completing this course, you should be able to:
 
-* Observable, measurable objective...
-* Observable, measurable objective...
-* Observable, measurable objective...
+*  Getting Started with OpenShift Serverless Logic
+
+*  Anatomy of a Quarkus Workflow Project
+
+*  Deploying with the Dev Profile
+
+*  Deploying with the Preview Profile
+
+*  The GitOps Profile & Production Deployment
+
+*  Integrating External Services (OpenAPI)
+
+*  Managing Service Endpoints & Configuration
+
+*  Securing Service Calls
+
+*  Introduction to Workflow Persistence
+
+*  Configuring PostgreSQL for State
+
+*  Event-Driven Architecture with Knative
+
+
 
 == Prerequisites
 

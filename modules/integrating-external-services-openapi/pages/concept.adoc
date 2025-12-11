@@ -1,0 +1,22 @@
+#  Concept
+
+```
+= Concept: kn workflow CLI
+
+The kn workflow CLI (Command Line Interface) is a powerful tool designed for managing serverless workflows on OpenShift Serverless. It allows developers to create, execute, and manage serverless workflows directly from the command line, providing a streamlined and efficient way to handle complex serverless applications.
+
+The kn CLI supports various operations, including:
+
+1. **Creating Workflows**: You can define your serverless workflows using YAML files and then create them in your OpenShift cluster using the 'kn workflow create' command.
+
+2. **Executing Workflows**: Once your workflows are created, you can execute them using the 'kn workflow submit' command. This command triggers the workflow and its associated functions.
+
+3. **Listing and Describing Workflows**: You can list all the workflows in your cluster using 'kn workflow list' and get detailed information about a specific workflow with 'kn workflow describe'.
+
+4. **Deleting Workflows**: When a workflow is no longer needed, it can be deleted using the 'kn workflow delete' command.
+
+5. **Tracking Workflow Executions**: The 'kn workflow logs' command allows you to view the logs of a specific workflow execution, aiding in debugging and monitoring.
+
+The kn workflow CLI simplifies the management of serverless workflows, making it easier to develop, test, and deploy serverless applications on OpenShift. It promotes efficiency and productivity by providing a command-line interface that interacts directly with the OpenShift Serverless API, reducing the need for extensive configuration files and manual API calls.
+
+```

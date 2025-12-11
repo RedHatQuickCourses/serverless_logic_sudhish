@@ -1,0 +1,63 @@
+#  Practical To-Do Exercise
+
+```
+= Practical To-Do Exercise
+
+== Deploying with the Dev Profile
+
+**Objective:** To gain hands-on experience in deploying a Quarkus application using the Dev profile on OpenShift Serverless.
+
+**Instructions:**
+
+1. **Prerequisites:**
+   - Ensure you have the OpenShift Serverless installed and configured on your OpenShift cluster.
+   - Have the `kn` CLI installed and properly configured to interact with your OpenShift cluster.
+   - Clone the provided Quarkus project repository.
+
+2. **Build and Deploy:**
+   - Navigate to the cloned Quarkus project directory.
+   - Build the Quarkus application using the following command:
+     ```
+     mvn clean package
+     ```
+   - Deploy the application using the `kn` CLI with the Dev profile:
+     ```
+     kn service create --image <your-image-name> --env VAR1=value1 --env VAR2=value2 --profile dev <service-name>
+     ```
+     Replace `<your-image-name>` with the name of your built Quarkus image, and `<service-name>` with a name for your service.
+
+3. **Testing the Deployment:**
+   - Once the deployment is complete, use `kn` to expose the service:
+     ```
+     kn service expose <service-name> --port 8080
+     ```
+   - Test the deployed application by sending a request to the exposed service URL.
+
+4. **Scaling and Cleanup:**
+   - Scale the application to see how OpenShift Serverless handles the increased load:
+     ```
+     kn service scale <service-name> --replicas 3
+     ```
+   - After testing, clean up resources by deleting the service:
+     ```
+     kn service delete <service-name>
+     ```
+
+**Reflection:**
+
+- Document the steps you followed.
+- Note any challenges encountered and how you overcame them.
+- Reflect on the benefits and limitations of using the Dev profile for development and testing.
+
+== Integrating External Services (OpenAPI)
+
+**Objective:** To practice integrating an external REST API into a Quarkus application using OpenAPI specifications.
+
+**Instructions:**
+
+1. **Prerequisites:**
+   - Have an external REST API endpoint available for integration.
+   - Ensure you have the `resteasy-openapi` dependency in your Quarkus project's `pom.xml`.
+
+2. **Define OpenAPI Spec:**
+   - Create an

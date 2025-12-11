@@ -1,0 +1,19 @@
+#  Configuring PostgreSQL for State
+
+```
+== Configuring PostgreSQL for State
+
+Configuring PostgreSQL for State involves setting up and integrating a PostgreSQL database to provide persistence for Knative (kn) workflows. This ensures that workflow state is stored and can be retrieved, enabling reliable and consistent execution across multiple invocations.
+
+### Key Points:
+
+- **Database Setup**: Install and configure a PostgreSQL server, ensuring it's accessible from the Knative environment.
+- **Connection Details**: Define the necessary connection parameters (host, port, database name, username, password) in the workflow configuration.
+- **Schema Design**: Create a suitable schema to store workflow-specific data, including any necessary tables and indexes.
+- **Persistence Strategies**: Implement strategies for storing and retrieving workflow state, such as using JSONB for flexible data storage or dedicated tables for specific state variables.
+- **Data Indexing**: Optimize data retrieval by creating appropriate indexes on frequently queried columns.
+- **Security**: Implement security measures, such as SSL connections and role-based access control, to protect the database.
+- **Backup and Recovery**: Establish a backup strategy to safeguard workflow state data and ensure recovery options are in place.
+
+This configuration enables workflows to maintain state between invocations, which is crucial for complex, long-running processes or when workflows need to coordinate with external systems.
+```

@@ -1,0 +1,36 @@
+#  Real-World Use Case
+
+```
+== Real-World Use Case: Serverless Logic for an E-commerce Platform
+
+In this real-world use case, we'll explore how OpenShift Serverless Logic can be leveraged to build a scalable and efficient e-commerce platform.
+
+**Concept**
+
+OpenShift Serverless Logic allows developers to create serverless applications using Quarkus, a Kubernetes-native Java framework. This approach enables the creation of lightweight, fast, and scalable services that can handle a large number of concurrent requests.
+
+For an e-commerce platform, we can utilize Serverless Logic to build various microservices, such as:
+
+1. **Product Catalog Service**: This service manages product information, including descriptions, images, and pricing. It can be built using Serverless Logic to handle sudden spikes in traffic, such as during sales events.
+
+2. **Order Processing Service**: This service manages the order lifecycle, from receiving orders to updating inventory and processing payments. Serverless Logic ensures that this service can scale up during peak hours, like holidays or flash sales.
+
+3. **Recommendation Engine Service**: This service uses machine learning algorithms to provide personalized product recommendations to users. Serverless Logic allows this service to scale based on the number of concurrent user requests.
+
+**Real-World Implementation**
+
+To implement this use case, follow these steps:
+
+1. **Create Quarkus projects** for each microservice using the kn workflow CLI.
+
+2. **Define REST APIs** for each service using Quarkus RESTEasy. This will enable communication between microservices and external systems, such as payment gateways or third-party recommendation engines.
+
+3. **Configure Serverless Logic** to deploy each microservice as a Knative service. This will allow automatic scaling based on demand.
+
+4. **Integrate external services** using OpenAPI specifications. For example, connect the Order Processing Service to a payment gateway using their provided OpenAPI specification.
+
+5. **Implement security** for service calls using HTTP Basic, Bearer Token, or OAuth2 authentication. This ensures that only authorized systems and users can access the e-commerce platform's microservices.
+
+6. **Integrate PostgreSQL** for workflow persistence and data indexing. This will enable the storage and retrieval of critical data, such as product information, user orders, and recommendation models.
+
+7. **Link workflows to Knative Brokers** for producing and consuming CloudEvents.

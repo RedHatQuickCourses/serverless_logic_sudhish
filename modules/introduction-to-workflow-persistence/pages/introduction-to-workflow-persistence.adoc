@@ -1,0 +1,17 @@
+#  Introduction to Workflow Persistence
+
+```
+== Introduction to Workflow Persistence
+
+Workflow persistence is the ability to store and retrieve the state of a workflow, allowing it to be resumed from the last known good state in case of interruptions. This concept is crucial for long-running or stateful workflows.
+
+- **Concept**: Understanding the need for workflow persistence, including scenarios like network failures, system crashes, or planned shutdowns. Learn about different storage options and their trade-offs.
+
+- **Real-World Use Case**: Explore examples where workflow persistence is essential, such as data processing pipelines, e-commerce order fulfillment, or financial transaction systems.
+
+- **Code/Config Example**: Get hands-on with code snippets and configuration files demonstrating how to integrate PostgreSQL for workflow persistence in a Quarkus project.
+
+- **Daily Self-Assessment**: Reflect on what you've learned about workflow persistence and its importance in real-world applications.
+
+- **Practical To-Do Exercise**: Set up a simple workflow with persistence using PostgreSQL in a Quarkus project.
+```

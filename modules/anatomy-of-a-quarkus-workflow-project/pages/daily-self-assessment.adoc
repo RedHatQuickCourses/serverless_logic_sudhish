@@ -1,0 +1,41 @@
+#  Daily Self-Assessment
+
+```
+= Daily Self-Assessment
+
+== Purpose
+
+The Daily Self-Assessment is designed to reinforce your understanding of the day's learning objectives and to encourage regular practice. It includes both conceptual questions and hands-on tasks to ensure a comprehensive grasp of the topics covered.
+
+== Questions
+
+1. **Conceptual Question:**
+   What is the primary function of the kn workflow CLI in the context of OpenShift Serverless Logic?
+
+   **Answer:**
+   The kn workflow CLI is a command-line tool used to manage and execute Quarkus workflow projects locally. It simplifies the process of creating, deploying, and testing serverless workflows on OpenShift Serverless.
+
+2. **Conceptual Question:**
+   Explain the difference between the Dev, Preview, and GitOps profiles in OpenShift Serverless.
+
+   **Answer:**
+   - **Dev Profile:** This profile is ideal for development and testing. It allows developers to quickly iterate and test changes without affecting the production environment.
+   - **Preview Profile:** This profile is used for staging or pre-production environments. It provides a more production-like setting for testing changes before they are merged into the main branch.
+   - **GitOps Profile:** This profile is used for production deployments. It ensures that the production environment is always in sync with the code repository, enabling continuous deployment and rollback capabilities.
+
+3. **Hands-on Task:**
+   - **Task:** Create a new Quarkus workflow project using the kn workflow CLI.
+   - **Instructions:**
+     1. Install the kn workflow CLI if you haven't already.
+     2. Run the command `kn workflow create --name my-workflow --runtime quarkus` to create a new workflow project named 'my-workflow' using the Quarkus runtime.
+     3. Navigate to the project directory with `cd my-workflow`.
+     4. Execute the workflow with `kn workflow run`.
+   - **Expected Outcome:** You should see the workflow executing successfully, with output indicating that the workflow has started and completed.
+
+== Reflection
+
+After completing the Daily Self-Assessment, take a moment to reflect on what you've learned. Consider any challenges you faced and how you overcame them. This reflection will help solidify your understanding and prepare you for the next day's learning.
+
+```
+
+This Daily Self-Assessment content is designed to be engaging, educational, and adaptable for different learning

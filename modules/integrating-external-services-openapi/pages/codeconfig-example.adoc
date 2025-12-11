@@ -1,0 +1,88 @@
+#  Code/Config Example
+
+```
+== Deploying with the Dev Profile
+- Concept
+- Real-World Use Case
+- Code/Config Example
+- Daily Self-Assessment
+- Practical To-Do Exercise
+
+== Deploying with the Preview Profile
+- Concept
+- Real-World Use Case
+- Code/Config Example
+- Daily Self-Assessment
+- Practical To-Do Exercise
+
+== The GitOps Profile & Production Deployment
+- Concept
+- Real-World Use Case
+- Code/Config Example
+- Daily Self-Assessment
+- Practical To-Do Exercise
+
+== Integrating External Services (OpenAPI)
+- Concept
+- Real-World Use Case
+- Code/Config Example
+- Daily Self-Assessment
+- Practical To-Do Exercise
+
+== Managing Service Endpoints & Configuration
+- Concept
+- Real-World Use Case
+- Code/Config Example
+- Daily Self-Assessment
+- Practical To-Do Exercise
+
+== Securing Service Calls
+- Concept
+- Real-World Use Case
+- Code/Config Example
+- Daily Self-Assessment
+- Practical To-Do Exercise
+
+== Introduction to Workflow Persistence
+- Concept
+- Real-World Use Case
+- Code/Config Example
+- Daily Self-Assessment
+- Practical To-Do Exercise
+
+== Configuring PostgreSQL for State
+- Concept
+- Real-World Use Case
+- Code/Config Example
+- Daily Self-Assessment
+- Practical To-Do Exercise
+
+== Event-Driven Architecture with Knative
+- Concept
+- Real-World Use Case
+- Code/Config Example
+- Daily Self-Assessment
+- Practical To-Do Exercise
+```
+
+## Code/Config Example: Deploying with the Dev Profile
+
+### Configuration
+
+To deploy a Quarkus application using the Dev profile on OpenShift Serverless, you need to create a `kn` workflow. Here's an example of a simple `kn` workflow YAML file (`dev-profile.yaml`):
+
+```yaml
+apiVersion: knative.dev/v1
+kind: Service
+metadata:
+  name: my-quarkus-app
+spec:
+  template:
+    spec:
+      containers:
+      - image: <your-quarkus-app-image>
+        ports:
+        - containerPort: 8080
+```
+
+Replace `<your-quarkus-app-image>` with the image of your Quarkus application.

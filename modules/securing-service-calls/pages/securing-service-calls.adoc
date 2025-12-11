@@ -1,0 +1,17 @@
+#  Securing Service Calls
+
+```
+== Securing Service Calls
+
+Securing service calls is crucial to protect sensitive data and maintain system integrity. This section covers various authentication methods to safeguard your OpenShift Serverless Logic applications.
+
+- **Concept**: Understand the importance of securing service calls and the risks associated with unprotected communication. Learn about different authentication methods: HTTP Basic, Bearer Token, and OAuth2.
+
+- **Real-World Use Case**: Explore scenarios where securing service calls is essential, such as protecting user data, ensuring API access control, and preventing unauthorized system modifications.
+
+- **Code/Config Example**: Get hands-on with configuration examples demonstrating how to implement HTTP Basic, Bearer Token, and OAuth2 authentication in your Quarkus projects.
+
+- **Daily Self-Assessment**: Reflect on what you've learned about securing service calls and how to apply it in your projects.
+
+- **Practical To-Do Exercise**: Apply your knowledge by setting up and testing authentication for your services using the provided code examples.
+```

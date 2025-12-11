@@ -1,10 +1,30 @@
-name: REPLACEREPONAME
-title: FIXME Course Title
-version: 1
+name: serverless_logic_sudhish
+title:  Foundations: kn workflow CLI, Quarkus project structure, and local execution.
+version: 1.0.0
 nav:
 - modules/ROOT/nav.adoc
 - modules/LABENV/nav.adoc
-- modules/chapter1/nav.adoc
-- modules/chapter2/nav.adoc
-- modules/chapter3/nav.adoc
+
+- modules/getting-started-with-openshift-serverless-logic/nav.adoc
+
+- modules/anatomy-of-a-quarkus-workflow-project/nav.adoc
+
+- modules/deploying-with-the-dev-profile/nav.adoc
+
+- modules/deploying-with-the-preview-profile/nav.adoc
+
+- modules/the-gitops-profile-production-deployment/nav.adoc
+
+- modules/integrating-external-services-openapi/nav.adoc
+
+- modules/managing-service-endpoints-configuration/nav.adoc
+
+- modules/securing-service-calls/nav.adoc
+
+- modules/introduction-to-workflow-persistence/nav.adoc
+
+- modules/configuring-postgresql-for-state/nav.adoc
+
+- modules/event-driven-architecture-with-knative/nav.adoc
+
 - modules/appendix/nav.adoc

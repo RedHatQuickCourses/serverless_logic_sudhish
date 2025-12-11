@@ -1,0 +1,6 @@
+* xref:the-gitops-profile-production-deployment.adoc[]
+** xref:concept.adoc[]
+** xref:real-world-use-case.adoc[]
+** xref:codeconfig-example.adoc[]
+** xref:daily-self-assessment.adoc[]
+** xref:practical-to-do-exercise.adoc[]
