@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Daily Self-Assessment :: Foundations - kn workflow CLI, Quarkus project structure, and local execution.</title>
+    <link rel="prev" href="codeconfig-example.html">
+    <link rel="next" href="practical-to-do-exercise.html">
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">Foundations - kn workflow CLI, Quarkus project structure, and local execution.</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="serverless_logic_sudhish" data-version="1.0.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Foundations - kn workflow CLI, Quarkus project structure, and local execution.</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../LABENV/index.html">Lab Environment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../getting-started-with-openshift-serverless-logic/getting-started-with-openshift-serverless-logic.html">Getting Started with OpenShift Serverless Logic</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../getting-started-with-openshift-serverless-logic/concept.html">Concept</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../getting-started-with-openshift-serverless-logic/real-world-use-case.html">Real-World Use Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../getting-started-with-openshift-serverless-logic/codeconfig-example.html">Code/Config Example</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../getting-started-with-openshift-serverless-logic/daily-self-assessment.html">Daily Self-Assessment</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../getting-started-with-openshift-serverless-logic/practical-to-do-exercise.html">Practical To-Do Exercise</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../anatomy-of-a-quarkus-workflow-project/anatomy-of-a-quarkus-workflow-project.html">Anatomy of a Quarkus Workflow Project</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../anatomy-of-a-quarkus-workflow-project/concept.html">Concept</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../anatomy-of-a-quarkus-workflow-project/real-world-use-case.html">Real-World Use Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../anatomy-of-a-quarkus-workflow-project/codeconfig-example.html">Code/Config Example</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../anatomy-of-a-quarkus-workflow-project/daily-self-assessment.html">Daily Self-Assessment</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../anatomy-of-a-quarkus-workflow-project/practical-to-do-exercise.html">Practical To-Do Exercise</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../deploying-with-the-dev-profile/deploying-with-the-dev-profile.html">Deploying with the Dev Profile</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../deploying-with-the-dev-profile/concept.html">Concept</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../deploying-with-the-dev-profile/real-world-use-case.html">Real-World Use Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../deploying-with-the-dev-profile/codeconfig-example.html">Code/Config Example</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../deploying-with-the-dev-profile/daily-self-assessment.html">Daily Self-Assessment</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../deploying-with-the-dev-profile/practical-to-do-exercise.html">Practical To-Do Exercise</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../deploying-with-the-preview-profile/deploying-with-the-preview-profile.html">Deploying with the Preview Profile</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../deploying-with-the-preview-profile/concept.html">Concept</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../deploying-with-the-preview-profile/real-world-use-case.html">Real-World Use Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../deploying-with-the-preview-profile/codeconfig-example.html">Code/Config Example</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../deploying-with-the-preview-profile/daily-self-assessment.html">Daily Self-Assessment</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../deploying-with-the-preview-profile/practical-to-do-exercise.html">Practical To-Do Exercise</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../the-gitops-profile-production-deployment/the-gitops-profile-production-deployment.html">The GitOps Profile &amp; Production Deployment</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../the-gitops-profile-production-deployment/concept.html">Concept</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../the-gitops-profile-production-deployment/real-world-use-case.html">Real-World Use Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../the-gitops-profile-production-deployment/codeconfig-example.html">Code/Config Example</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../the-gitops-profile-production-deployment/daily-self-assessment.html">Daily Self-Assessment</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../the-gitops-profile-production-deployment/practical-to-do-exercise.html">Practical To-Do Exercise</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../integrating-external-services-openapi/integrating-external-services-openapi.html">Integrating External Services (OpenAPI)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrating-external-services-openapi/concept.html">Concept</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrating-external-services-openapi/real-world-use-case.html">Real-World Use Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrating-external-services-openapi/codeconfig-example.html">Code/Config Example</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrating-external-services-openapi/daily-self-assessment.html">Daily Self-Assessment</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrating-external-services-openapi/practical-to-do-exercise.html">Practical To-Do Exercise</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../managing-service-endpoints-configuration/managing-service-endpoints-configuration.html">Managing Service Endpoints &amp; Configuration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../managing-service-endpoints-configuration/concept.html">Concept</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../managing-service-endpoints-configuration/real-world-use-case.html">Real-World Use Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../managing-service-endpoints-configuration/codeconfig-example.html">Code/Config Example</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../managing-service-endpoints-configuration/daily-self-assessment.html">Daily Self-Assessment</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../managing-service-endpoints-configuration/practical-to-do-exercise.html">Practical To-Do Exercise</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../securing-service-calls/securing-service-calls.html">Securing Service Calls</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../securing-service-calls/concept.html">Concept</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../securing-service-calls/real-world-use-case.html">Real-World Use Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../securing-service-calls/codeconfig-example.html">Code/Config Example</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../securing-service-calls/daily-self-assessment.html">Daily Self-Assessment</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../securing-service-calls/practical-to-do-exercise.html">Practical To-Do Exercise</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="introduction-to-workflow-persistence.html">Introduction to Workflow Persistence</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="concept.html">Concept</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="real-world-use-case.html">Real-World Use Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="codeconfig-example.html">Code/Config Example</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="daily-self-assessment.html">Daily Self-Assessment</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="practical-to-do-exercise.html">Practical To-Do Exercise</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../configuring-postgresql-for-state/configuring-postgresql-for-state.html">Configuring PostgreSQL for State</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../configuring-postgresql-for-state/concept.html">Concept</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../configuring-postgresql-for-state/real-world-use-case.html">Real-World Use Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../configuring-postgresql-for-state/codeconfig-example.html">Code/Config Example</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../configuring-postgresql-for-state/daily-self-assessment.html">Daily Self-Assessment</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../configuring-postgresql-for-state/practical-to-do-exercise.html">Practical To-Do Exercise</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../event-driven-architecture-with-knative/event-driven-architecture-with-knative.html">Event-Driven Architecture with Knative</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../event-driven-architecture-with-knative/concept.html">Concept</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../event-driven-architecture-with-knative/real.html">Real</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../appendix/appendix.html">Appendix</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Foundations - kn workflow CLI, Quarkus project structure, and local execution.</span>
+    <span class="version">1.0.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Foundations - kn workflow CLI, Quarkus project structure, and local execution.</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Foundations - kn workflow CLI, Quarkus project structure, and local execution.</a></li>
+    <li><a href="introduction-to-workflow-persistence.html">Introduction to Workflow Persistence</a></li>
+    <li><a href="daily-self-assessment.html">Daily Self-Assessment</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Daily Self-Assessment</h1>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">= Daily Self-Assessment
+
+== Purpose
+
+The Daily Self-Assessment is designed to reinforce your understanding of the day's learning objectives and to encourage regular practice. It includes both conceptual questions and hands-on tasks to ensure a comprehensive grasp of the topics covered.
+
+== Questions
+
+1. **Conceptual Question:**
+   What is the primary function of the kn workflow CLI in the context of OpenShift Serverless Logic?
+
+   **Answer:**
+   The kn workflow CLI is a command-line tool used to manage and execute Quarkus workflow projects locally. It simplifies the process of creating, deploying, and testing serverless workflows on OpenShift Serverless.
+
+2. **Conceptual Question:**
+   Explain the difference between the Dev, Preview, and GitOps profiles in OpenShift Serverless.
+
+   **Answer:**
+   - **Dev Profile:** This profile is ideal for development and testing. It allows developers to quickly iterate and test changes without affecting the production environment.
+   - **Preview Profile:** This profile is used for staging or pre-production environments. It provides a more production-like setting for testing changes before they are merged into the main branch.
+   - **GitOps Profile:** This profile is used for production deployments. It ensures that the production environment is always in sync with the code repository, enabling continuous deployment and rollback capabilities.
+
+3. **Hands-on Task:**
+   - **Task:** Create a new Quarkus workflow project using the kn workflow CLI.
+   - **Instructions:**
+     1. Install the kn workflow CLI if you haven't already.
+     2. Run the command `kn workflow create --name my-workflow --runtime quarkus` to create a new workflow project named 'my-workflow' using the Quarkus runtime.
+     3. Navigate to the project directory with `cd my-workflow`.
+     4. Execute the workflow with `kn workflow run`.
+   - **Expected Outcome:** You should see the workflow executing successfully, with output indicating that the workflow has started and completed.
+
+== Reflection
+
+After completing the Daily Self-Assessment, take a moment to reflect on what you've learned. Consider any challenges you faced and how you overcame them. This reflection will help solidify your understanding and prepare you for the next day's learning.</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This Daily Self-Assessment content is designed to be engaging, educational, and adaptable for different learning</p>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="codeconfig-example.html">Code/Config Example</a></span>
+  <span class="next"><a href="practical-to-do-exercise.html">Practical To-Do Exercise</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
