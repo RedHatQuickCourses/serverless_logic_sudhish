@@ -6,9 +6,9 @@
 Course Title:  Foundations: kn workflow CLI, Quarkus project structure, and local execution.
 
 Description:
-Course description FIXME
+Course description Introductory course about Openshift Serverless logic
 
-Duration: FIXME hours
+Duration: 7 hours
 
 == Topics covered in this course
 
