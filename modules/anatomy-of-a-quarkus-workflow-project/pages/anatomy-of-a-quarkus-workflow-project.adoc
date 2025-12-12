@@ -1,6 +1,6 @@
 #  Anatomy of a Quarkus Workflow Project
 
-```
+
 Anatomy of a Quarkus Workflow Project
 =====================================
 
@@ -29,4 +29,4 @@ Practical To-Do Exercise
 ------------------------
 
 * Hands-on tasks to create and configure a simple Quarkus Workflow Project.
-```
+`
