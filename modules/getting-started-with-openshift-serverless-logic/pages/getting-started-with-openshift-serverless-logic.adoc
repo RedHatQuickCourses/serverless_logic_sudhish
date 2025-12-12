@@ -1,6 +1,6 @@
 #  Getting Started with OpenShift Serverless Logic
 
-```
+
 Getting Started with OpenShift Serverless Logic
 ===============================================
 
@@ -36,4 +36,3 @@ Practical To-Do Exercise
 1. Deploy a simple "Hello, World!" application using OpenShift Serverless Logic.
 2. Trigger the application and observe its automatic scaling.
 3. Modify the application to respond to an HTTP request.
-```
