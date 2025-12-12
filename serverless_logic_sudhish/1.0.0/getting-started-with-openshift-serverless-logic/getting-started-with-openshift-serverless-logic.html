@@ -363,43 +363,78 @@
 </aside>
 <article class="doc">
 <h1 class="page">Getting Started with OpenShift Serverless Logic</h1>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">Getting Started with OpenShift Serverless Logic
-===============================================
-
-Concept
--------
-
-OpenShift Serverless Logic introduces the ability to run serverless applications on OpenShift. It leverages Knative, a Kubernetes-based platform for building, deploying, and managing modern serverless workloads.
-
-Real-World Use Case
--------------------
-
-This technology is ideal for applications requiring automatic scaling, event-driven processing, and reduced operational management overhead. It's beneficial for microservices, event handling, and applications with unpredictable traffic patterns.
-
-Code/Config Example
--------------------
-
-A typical Knative service, defined in a `knative.yaml` file, includes:
-
-* `apiVersion`: Specifies the API version.
-* `kind`: Defines the resource type, `Service` in this case.
-* `metadata`: Contains the service name and namespace.
-* `spec`: Holds the configuration for the service, including the container image, environment variables, and resources.
-
-Daily Self-Assessment
----------------------
-
-* Can you explain what Knative is and how it relates to OpenShift Serverless Logic?
-* How would you set up a basic Knative service?
-
-Practical To-Do Exercise
-------------------------
-
-1. Deploy a simple "Hello, World!" application using OpenShift Serverless Logic.
-2. Trigger the application and observe its automatic scaling.
-3. Modify the application to respond to an HTTP request.</code></pre>
+<h1 id="_getting_started_with_openshift_serverless_logic" class="sect0"><a class="anchor" href="#_getting_started_with_openshift_serverless_logic"></a>Getting Started with OpenShift Serverless Logic</h1>
+<div class="sect1">
+<h2 id="_concept"><a class="anchor" href="#_concept"></a>Concept</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>OpenShift Serverless Logic introduces the ability to run serverless applications on OpenShift. It leverages Knative, a Kubernetes-based platform for building, deploying, and managing modern serverless workloads.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_real_world_use_case"><a class="anchor" href="#_real_world_use_case"></a>Real-World Use Case</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This technology is ideal for applications requiring automatic scaling, event-driven processing, and reduced operational management overhead. It&#8217;s beneficial for microservices, event handling, and applications with unpredictable traffic patterns.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_codeconfig_example"><a class="anchor" href="#_codeconfig_example"></a>Code/Config Example</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A typical Knative service, defined in a <code>knative.yaml</code> file, includes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>apiVersion</code>: Specifies the API version.</p>
+</li>
+<li>
+<p><code>kind</code>: Defines the resource type, <code>Service</code> in this case.</p>
+</li>
+<li>
+<p><code>metadata</code>: Contains the service name and namespace.</p>
+</li>
+<li>
+<p><code>spec</code>: Holds the configuration for the service, including the container image, environment variables, and resources.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_daily_self_assessment"><a class="anchor" href="#_daily_self_assessment"></a>Daily Self-Assessment</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Can you explain what Knative is and how it relates to OpenShift Serverless Logic?</p>
+</li>
+<li>
+<p>How would you set up a basic Knative service?</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_practical_to_do_exercise"><a class="anchor" href="#_practical_to_do_exercise"></a>Practical To-Do Exercise</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Deploy a simple "Hello, World!" application using OpenShift Serverless Logic.</p>
+</li>
+<li>
+<p>Trigger the application and observe its automatic scaling.</p>
+</li>
+<li>
+<p>Modify the application to respond to an HTTP request.</p>
+</li>
+</ol>
+</div>
 </div>
 </div>
 <nav class="pagination">
