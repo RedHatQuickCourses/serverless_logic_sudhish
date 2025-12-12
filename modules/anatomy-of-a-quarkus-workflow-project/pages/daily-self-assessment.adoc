@@ -1,6 +1,6 @@
 #  Daily Self-Assessment
 
-```
+
 = Daily Self-Assessment
 
 == Purpose
@@ -36,6 +36,6 @@ The Daily Self-Assessment is designed to reinforce your understanding of the day
 
 After completing the Daily Self-Assessment, take a moment to reflect on what you've learned. Consider any challenges you faced and how you overcame them. This reflection will help solidify your understanding and prepare you for the next day's learning.
 
-```
+
 
 This Daily Self-Assessment content is designed to be engaging, educational, and adaptable for different learning
