@@ -1,6 +1,5 @@
 #  Daily Self-Assessment
 
-```
 = Daily Self-Assessment
 
 == Purpose
@@ -39,6 +38,3 @@ For the hands-on task, when you run `kn workflow run`, you should see the workfl
 
 For more detailed information, refer to the official OpenShift Serverless documentation and the Quarkus workflow CLI GitHub repository.
 
-```
-
-This
