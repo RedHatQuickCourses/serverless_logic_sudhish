@@ -364,45 +364,71 @@
 </aside>
 <article class="doc">
 <h1 class="page">Real-World Use Case</h1>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">== Real-World Use Case: Serverless Logic for an E-commerce Platform
-
-In this real-world use case, we'll explore how OpenShift Serverless Logic can be utilized to build a scalable and efficient e-commerce platform.
-
-**Concept**
-
-OpenShift Serverless Logic allows developers to create serverless applications using Quarkus, a Kubernetes-native Java framework. This approach enables the creation of lightweight, fast, and scalable services that can handle a large number of requests with minimal resource consumption.
-
-For an e-commerce platform, we can leverage OpenShift Serverless Logic to build various microservices, such as:
-
-1. **Product Catalog Service**: This service manages product information, including descriptions, images, and pricing. It can be built using OpenShift Serverless Logic to handle sudden spikes in traffic, such as during sales events.
-
-2. **Order Processing Service**: This service manages the order lifecycle, from receiving orders to updating inventory and processing payments. OpenShift Serverless Logic ensures that this service can scale up or down based on demand, optimizing resource usage and costs.
-
-3. **Recommendation Engine Service**: This service uses machine learning algorithms to provide personalized product recommendations to users. OpenShift Serverless Logic allows this service to scale efficiently, ensuring quick response times even during peak usage.
-
-**Real-World Implementation**
-
-To implement this real-world use case, follow these steps:
-
-1. **Create Quarkus projects** for each microservice using the kn workflow CLI.
-
-2. **Define the service endpoints** and configurations in the `config.yaml` file for each project.
-
-3. **Deploy the services** using the Dev profile for initial testing and development.
-
-4. **Switch to the Preview profile** to test the services in a more production-like environment before promoting them to the GitOps profile for a fully automated production deployment.
-
-5. **Integrate external services** (e.g., payment gateways, shipping providers) using OpenAPI specifications.
-
-6. **Secure service calls** using HTTP Basic, Bearer Token, or OAuth2 authentication methods.
-
-7. **Integrate PostgreSQL** for workflow persistence and data indexing, ensuring that order and product information are stored reliably.
-
-8. **Link workflows to Knative Brokers** for producing and consuming CloudEvents, enabling event-driven communication between services.
-
-By</code></pre>
+<div class="sect1">
+<h2 id="_real_world_use_case_serverless_logic_for_an_e_commerce_platform"><a class="anchor" href="#_real_world_use_case_serverless_logic_for_an_e_commerce_platform"></a>Real-World Use Case: Serverless Logic for an E-commerce Platform</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In this real-world use case, we&#8217;ll explore how OpenShift Serverless Logic can be utilized to build a scalable and efficient e-commerce platform.</p>
+</div>
+<div class="paragraph">
+<p><strong>Concept</strong></p>
+</div>
+<div class="paragraph">
+<p>OpenShift Serverless Logic allows developers to create serverless applications using Quarkus, a Kubernetes-native Java framework. This approach enables the creation of lightweight, fast, and scalable services that can handle a large number of requests with minimal resource consumption.</p>
+</div>
+<div class="paragraph">
+<p>For an e-commerce platform, we can leverage OpenShift Serverless Logic to build various microservices, such as:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Product Catalog Service</strong>: This service manages product information, including descriptions, images, and pricing. It can be built using OpenShift Serverless Logic to handle sudden spikes in traffic, such as during sales events.</p>
+</li>
+<li>
+<p><strong>Order Processing Service</strong>: This service manages the order lifecycle, from receiving orders to updating inventory and processing payments. OpenShift Serverless Logic ensures that this service can scale up or down based on demand, optimizing resource usage and costs.</p>
+</li>
+<li>
+<p><strong>Recommendation Engine Service</strong>: This service uses machine learning algorithms to provide personalized product recommendations to users. OpenShift Serverless Logic allows this service to scale efficiently, ensuring quick response times even during peak usage.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Real-World Implementation</strong></p>
+</div>
+<div class="paragraph">
+<p>To implement this real-world use case, follow these steps:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Create Quarkus projects</strong> for each microservice using the kn workflow CLI.</p>
+</li>
+<li>
+<p><strong>Define the service endpoints</strong> and configurations in the <code>config.yaml</code> file for each project.</p>
+</li>
+<li>
+<p><strong>Deploy the services</strong> using the Dev profile for initial testing and development.</p>
+</li>
+<li>
+<p><strong>Switch to the Preview profile</strong> to test the services in a more production-like environment before promoting them to the GitOps profile for a fully automated production deployment.</p>
+</li>
+<li>
+<p><strong>Integrate external services</strong> (e.g., payment gateways, shipping providers) using OpenAPI specifications.</p>
+</li>
+<li>
+<p><strong>Secure service calls</strong> using HTTP Basic, Bearer Token, or OAuth2 authentication methods.</p>
+</li>
+<li>
+<p><strong>Integrate PostgreSQL</strong> for workflow persistence and data indexing, ensuring that order and product information are stored reliably.</p>
+</li>
+<li>
+<p><strong>Link workflows to Knative Brokers</strong> for producing and consuming CloudEvents, enabling event-driven communication between services.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>By</p>
+</div>
 </div>
 </div>
 <nav class="pagination">

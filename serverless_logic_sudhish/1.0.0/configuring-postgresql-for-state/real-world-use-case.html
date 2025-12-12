@@ -364,25 +364,37 @@
 </aside>
 <article class="doc">
 <h1 class="page">Real-World Use Case</h1>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">== Real-World Use Case: Serverless Logic for an E-commerce Platform
-
-In this real-world use case, we'll explore how OpenShift Serverless Logic can be utilized to build a scalable and efficient e-commerce platform. The platform will consist of several microservices, each responsible for a specific business capability, such as product catalog, shopping cart, order management, and payment processing.
-
-1. **Product Catalog Service**: This service will store and manage product information, including details like name, description, price, and inventory. It will expose a REST API for other services to fetch product data.
-
-2. **Shopping Cart Service**: This service will allow users to add, update, and remove items from their shopping carts. It will maintain the cart state and provide APIs for other services to interact with the cart data.
-
-3. **Order Management Service**: This service will handle order creation, processing, and tracking. It will integrate with the payment processing service to finalize orders and update their status.
-
-4. **Payment Processing Service**: This service will securely process payments using popular payment gateways like Stripe or PayPal. It will expose APIs for the order management service to initiate and verify transactions.
-
-OpenShift Serverless Logic will be used to develop and deploy these microservices as serverless functions. Each service will be packaged as a Quarkus application, taking advantage of its native compilation and minimal runtime footprint. The serverless functions will be triggered by HTTP requests, Knative Brokers, or other events, enabling an event-driven architecture.
-
-By using OpenShift Serverless Logic, the e-commerce platform can automatically scale based on demand, ensuring optimal performance during peak shopping seasons or promotional events. Additionally, the platform can minimize infrastructure costs by only running functions when needed, as opposed to maintaining a constant set of servers.
-
-This real-world use case demonstrates the power and flexibility of OpenShift Serverless Logic in building modern, scalable, and cost-effective applications.</code></pre>
+<div class="sect1">
+<h2 id="_real_world_use_case_serverless_logic_for_an_e_commerce_platform"><a class="anchor" href="#_real_world_use_case_serverless_logic_for_an_e_commerce_platform"></a>Real-World Use Case: Serverless Logic for an E-commerce Platform</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In this real-world use case, we&#8217;ll explore how OpenShift Serverless Logic can be utilized to build a scalable and efficient e-commerce platform. The platform will consist of several microservices, each responsible for a specific business capability, such as product catalog, shopping cart, order management, and payment processing.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Product Catalog Service</strong>: This service will store and manage product information, including details like name, description, price, and inventory. It will expose a REST API for other services to fetch product data.</p>
+</li>
+<li>
+<p><strong>Shopping Cart Service</strong>: This service will allow users to add, update, and remove items from their shopping carts. It will maintain the cart state and provide APIs for other services to interact with the cart data.</p>
+</li>
+<li>
+<p><strong>Order Management Service</strong>: This service will handle order creation, processing, and tracking. It will integrate with the payment processing service to finalize orders and update their status.</p>
+</li>
+<li>
+<p><strong>Payment Processing Service</strong>: This service will securely process payments using popular payment gateways like Stripe or PayPal. It will expose APIs for the order management service to initiate and verify transactions.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>OpenShift Serverless Logic will be used to develop and deploy these microservices as serverless functions. Each service will be packaged as a Quarkus application, taking advantage of its native compilation and minimal runtime footprint. The serverless functions will be triggered by HTTP requests, Knative Brokers, or other events, enabling an event-driven architecture.</p>
+</div>
+<div class="paragraph">
+<p>By using OpenShift Serverless Logic, the e-commerce platform can automatically scale based on demand, ensuring optimal performance during peak shopping seasons or promotional events. Additionally, the platform can minimize infrastructure costs by only running functions when needed, as opposed to maintaining a constant set of servers.</p>
+</div>
+<div class="paragraph">
+<p>This real-world use case demonstrates the power and flexibility of OpenShift Serverless Logic in building modern, scalable, and cost-effective applications.</p>
+</div>
 </div>
 </div>
 <nav class="pagination">

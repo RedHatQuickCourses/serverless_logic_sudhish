@@ -364,47 +364,63 @@
 </aside>
 <article class="doc">
 <h1 class="page">Real-World Use Case</h1>
-<div id="preamble">
+<div class="sect1">
+<h2 id="_real_world_use_case_serverless_logic_for_an_e_commerce_platform"><a class="anchor" href="#_real_world_use_case_serverless_logic_for_an_e_commerce_platform"></a>Real-World Use Case: Serverless Logic for an E-commerce Platform</h2>
 <div class="sectionbody">
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">== Real-World Use Case: Serverless Logic for an E-commerce Platform
-
-In this real-world use case, we'll explore how OpenShift Serverless Logic can be utilized to build a scalable and efficient e-commerce platform.
-
-**Concept**
-
-OpenShift Serverless Logic allows developers to create serverless applications using Quarkus, a Kubernetes-native Java framework. This approach enables the creation of lightweight, fast, and scalable services that can handle a large number of requests with minimal resource consumption.
-
-For an e-commerce platform, we can leverage OpenShift Serverless Logic to build various microservices, such as:
-
-1. **Product Catalog Service**: This service manages product information, including descriptions, images, pricing, and inventory levels. It exposes an API for frontend applications to retrieve product data.
-
-2. **Order Service**: This service processes customer orders, interacts with the payment gateway, and updates inventory levels. It also sends order confirmation emails to customers.
-
-3. **Recommendation Engine Service**: This service uses machine learning algorithms to analyze customer behavior and suggest relevant products. It exposes an API for frontend applications to fetch personalized product recommendations.
-
-**Real-World Implementation**
-
-Let's consider a scenario where the e-commerce platform experiences a sudden surge in traffic during a flash sale. With OpenShift Serverless Logic, the platform can automatically scale the microservices to handle the increased load. Once the traffic subsides, the platform can scale down the services to save resources.
-
-For instance, when the Order Service receives a high volume of orders, it can automatically trigger additional instances to process the requests. Similarly, if the Recommendation Engine Service needs to analyze more customer data for personalized recommendations, it can scale up to meet the demand.
-
-This serverless approach ensures that the e-commerce platform remains responsive and available during peak traffic, while minimizing resource consumption and costs during off-peak hours.
-
-**Code/Config Example**
-
-To implement the above use case, you would create separate Quarkus projects for each microservice (Product Catalog, Order, and Recommendation Engine). Each project would have its own configuration file (application.properties) to define resources, connections, and other settings.
-
-Here's a simplified example of the application.properties file for the Order Service:
-
-[SNIPPET: Order Service application.properties]</code></pre>
+<div class="paragraph">
+<p>In this real-world use case, we&#8217;ll explore how OpenShift Serverless Logic can be utilized to build a scalable and efficient e-commerce platform.</p>
+</div>
+<div class="paragraph">
+<p><strong>Concept</strong></p>
+</div>
+<div class="paragraph">
+<p>OpenShift Serverless Logic allows developers to create serverless applications using Quarkus, a Kubernetes-native Java framework. This approach enables the creation of lightweight, fast, and scalable services that can handle a large number of requests with minimal resource consumption.</p>
+</div>
+<div class="paragraph">
+<p>For an e-commerce platform, we can leverage OpenShift Serverless Logic to build various microservices, such as:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Product Catalog Service</strong>: This service manages product information, including descriptions, images, pricing, and inventory levels. It exposes an API for frontend applications to retrieve product data.</p>
+</li>
+<li>
+<p><strong>Order Service</strong>: This service processes customer orders, interacts with the payment gateway, and updates inventory levels. It also sends order confirmation emails to customers.</p>
+</li>
+<li>
+<p><strong>Recommendation Engine Service</strong>: This service uses machine learning algorithms to analyze customer behavior and suggest relevant products. It exposes an API for frontend applications to fetch personalized product recommendations.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Real-World Implementation</strong></p>
+</div>
+<div class="paragraph">
+<p>Let&#8217;s consider a scenario where the e-commerce platform experiences a sudden surge in traffic during a flash sale. With OpenShift Serverless Logic, the platform can automatically scale the microservices to handle the increased load. Once the traffic subsides, the platform can scale down the services to save resources.</p>
+</div>
+<div class="paragraph">
+<p>For instance, when the Order Service receives a high volume of orders, it can automatically trigger additional instances to process the requests. Similarly, if the Recommendation Engine Service needs to analyze more customer data for personalized recommendations, it can scale up to meet the demand.</p>
+</div>
+<div class="paragraph">
+<p>This serverless approach ensures that the e-commerce platform remains responsive and available during peak traffic, while minimizing resource consumption and costs during off-peak hours.</p>
+</div>
+<div class="paragraph">
+<p><strong>Code/Config Example</strong></p>
+</div>
+<div class="paragraph">
+<p>To implement the above use case, you would create separate Quarkus projects for each microservice (Product Catalog, Order, and Recommendation Engine). Each project would have its own configuration file (application.properties) to define resources, connections, and other settings.</p>
+</div>
+<div class="paragraph">
+<p>Here&#8217;s a simplified example of the application.properties file for the Order Service:</p>
 </div>
 </div>
 </div>
-</div>
-<h1 id="_database_connection_settings" class="sect0"><a class="anchor" href="#_database_connection_settings"></a>Database connection settings</h1>
+<div class="sect1">
+<h2 id="_database_connection_settings"><a class="anchor" href="#_database_connection_settings"></a>Database connection settings</h2>
+<div class="sectionbody">
 
+</div>
+</div>
 <nav class="pagination">
   <span class="prev"><a href="concept.html">Concept</a></span>
   <span class="next"><a href="codeconfig-example.html">Code/Config Example</a></span>

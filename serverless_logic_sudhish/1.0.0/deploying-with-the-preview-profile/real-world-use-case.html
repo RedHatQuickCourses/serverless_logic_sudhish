@@ -364,31 +364,53 @@
 </aside>
 <article class="doc">
 <h1 class="page">Real-World Use Case</h1>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">== Real-World Use Case: Serverless Logic for an E-commerce Platform
-
-In this real-world use case, we'll explore how OpenShift Serverless Logic can be utilized to build a scalable and efficient e-commerce platform. The platform will consist of several microservices, each responsible for a specific business capability, such as product catalog, shopping cart, order management, and payment processing.
-
-1. **Product Catalog Service**: This service will store and manage product information, including details like name, description, price, and inventory. It will expose a REST API for other services to query product data.
-
-2. **Shopping Cart Service**: This service will allow users to add, update, and remove items from their shopping carts. It will maintain the cart state and provide APIs for other services to manage carts on behalf of users.
-
-3. **Order Management Service**: This service will handle the creation, tracking, and management of orders. It will integrate with the payment processing service to finalize transactions and update the order status.
-
-4. **Payment Processing Service**: This service will securely process payments using popular payment gateways like Stripe or PayPal. It will expose APIs for the order management service to initiate and confirm transactions.
-
-5. **Notification Service**: This service will send order confirmation, shipping updates, and promotional notifications to users via email or SMS.
-
-Using OpenShift Serverless Logic, we can deploy each of these microservices as independent serverless functions. This approach offers several benefits:
-
-- **Scalability**: Serverless functions automatically scale based on demand, ensuring optimal performance during peak shopping seasons or promotional events.
-- **Cost-Efficiency**: With serverless, you only pay for the compute time you consume, reducing infrastructure costs compared to traditional deployment models.
-- **Faster Time-to-Market**: Serverless Logic enables developers to focus on writing business logic instead of managing servers, leading to quicker development cycles and faster feature delivery.
-
-To implement this use case, we'll leverage Quarkus for building microservices, Knative for serverless execution, and PostgreSQL for persistent storage. We'll also use OpenAPI specifications to define and manage service contracts, ensuring seamless integration between services.
-
-By the end of this real-world use case, you'll have a solid understanding of how OpenShift Serverless Logic can be applied to build a robust, scalable, and cost-efficient e-</code></pre>
+<div class="sect1">
+<h2 id="_real_world_use_case_serverless_logic_for_an_e_commerce_platform"><a class="anchor" href="#_real_world_use_case_serverless_logic_for_an_e_commerce_platform"></a>Real-World Use Case: Serverless Logic for an E-commerce Platform</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In this real-world use case, we&#8217;ll explore how OpenShift Serverless Logic can be utilized to build a scalable and efficient e-commerce platform. The platform will consist of several microservices, each responsible for a specific business capability, such as product catalog, shopping cart, order management, and payment processing.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Product Catalog Service</strong>: This service will store and manage product information, including details like name, description, price, and inventory. It will expose a REST API for other services to query product data.</p>
+</li>
+<li>
+<p><strong>Shopping Cart Service</strong>: This service will allow users to add, update, and remove items from their shopping carts. It will maintain the cart state and provide APIs for other services to manage carts on behalf of users.</p>
+</li>
+<li>
+<p><strong>Order Management Service</strong>: This service will handle the creation, tracking, and management of orders. It will integrate with the payment processing service to finalize transactions and update the order status.</p>
+</li>
+<li>
+<p><strong>Payment Processing Service</strong>: This service will securely process payments using popular payment gateways like Stripe or PayPal. It will expose APIs for the order management service to initiate and confirm transactions.</p>
+</li>
+<li>
+<p><strong>Notification Service</strong>: This service will send order confirmation, shipping updates, and promotional notifications to users via email or SMS.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Using OpenShift Serverless Logic, we can deploy each of these microservices as independent serverless functions. This approach offers several benefits:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Scalability</strong>: Serverless functions automatically scale based on demand, ensuring optimal performance during peak shopping seasons or promotional events.</p>
+</li>
+<li>
+<p><strong>Cost-Efficiency</strong>: With serverless, you only pay for the compute time you consume, reducing infrastructure costs compared to traditional deployment models.</p>
+</li>
+<li>
+<p><strong>Faster Time-to-Market</strong>: Serverless Logic enables developers to focus on writing business logic instead of managing servers, leading to quicker development cycles and faster feature delivery.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>To implement this use case, we&#8217;ll leverage Quarkus for building microservices, Knative for serverless execution, and PostgreSQL for persistent storage. We&#8217;ll also use OpenAPI specifications to define and manage service contracts, ensuring seamless integration between services.</p>
+</div>
+<div class="paragraph">
+<p>By the end of this real-world use case, you&#8217;ll have a solid understanding of how OpenShift Serverless Logic can be applied to build a robust, scalable, and cost-efficient e-</p>
+</div>
 </div>
 </div>
 <nav class="pagination">

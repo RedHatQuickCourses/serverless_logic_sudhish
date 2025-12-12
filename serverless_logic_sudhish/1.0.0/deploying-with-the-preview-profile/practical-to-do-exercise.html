@@ -364,58 +364,122 @@
 </aside>
 <article class="doc">
 <h1 class="page">Practical To-Do Exercise</h1>
-<div class="listingblock">
+<h1 id="_practical_to_do_exercise" class="sect0"><a class="anchor" href="#_practical_to_do_exercise"></a>Practical To-Do Exercise</h1>
+<div class="sect1">
+<h2 id="_deploying_with_the_dev_profile"><a class="anchor" href="#_deploying_with_the_dev_profile"></a>Deploying with the Dev Profile</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Objective:</strong> To gain hands-on experience in deploying a Quarkus application using the Dev profile on OpenShift Serverless.</p>
+</div>
+<div class="paragraph">
+<p><strong>Instructions:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Set up your environment:</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Ensure you have OpenShift Serverless installed and configured on your cluster.</p>
+</li>
+<li>
+<p>Install the OpenShift CLI (oc) and the kn CLI.</p>
+</li>
+<li>
+<p>Log in to your OpenShift cluster using <code>oc login</code>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Create a Quarkus project:</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Use the Quarkus CLI to generate a new project: <code>quarkus create my-quarkus-app</code>.</p>
+</li>
+<li>
+<p>Navigate into the project directory: <code>cd my-quarkus-app</code>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Configure the Quarkus project for OpenShift Serverless:</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Add the OpenShift Serverless annotations to the <code>application.properties</code> file:</p>
+<div class="literalblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">= Practical To-Do Exercise
-
-== Deploying with the Dev Profile
-
-**Objective:** To gain hands-on experience in deploying a Quarkus application using the Dev profile on OpenShift Serverless.
-
-**Instructions:**
-
-1. **Set up your environment:**
-   - Ensure you have OpenShift Serverless installed and configured on your cluster.
-   - Install the OpenShift CLI (oc) and the kn CLI.
-   - Log in to your OpenShift cluster using `oc login`.
-
-2. **Create a Quarkus project:**
-   - Use the Quarkus CLI to generate a new project: `quarkus create my-quarkus-app`.
-   - Navigate into the project directory: `cd my-quarkus-app`.
-
-3. **Configure the Quarkus project for OpenShift Serverless:**
-   - Add the OpenShift Serverless annotations to the `application.properties` file:
-
-     ```
-     knative.openshift.service-class=Passthrough
-     knative.openshift.route.host=my-quarkus-app.example.com
-     ```
-
-4. **Build and push the Quarkus application:**
-   - Build the application: `mvn clean package`.
-   - Create a Docker image: `docker build -t image-registry/&lt;namespace&gt;/&lt;app-name&gt;:&lt;tag&gt; .`.
-   - Push the image to your image registry: `docker push image-registry/&lt;namespace&gt;/&lt;app-name&gt;:&lt;tag&gt;`.
-
-5. **Deploy the application using the Dev profile:**
-   - Apply the Knative Service configuration:
-
-     ```
-     kn service create --image image-registry/&lt;namespace&gt;/&lt;app-name&gt;:&lt;tag&gt; --env KNATIVE_DEV=true
-     ```
-
-6. **Test the deployment:**
-   - Get the Knative Service URL: `kn service describe &lt;service-name&gt; --output jsonpath='{.status.url)'.
-   - Access the application using the provided URL.
-
-**Daily Self-Assessment:**
-
-*Q: What is the purpose of using the Dev profile when deploying a Quarkus application on OpenShift Serverless?*
-
-*A: The Dev profile is used for local development and testing of serverless applications. It allows developers to test their applications on their local machines before deploying them to a production-like environment. This profile is useful for debugging and ensuring that the application behaves as expected in a serverless context.*
-
-**Example:**
-
-When deploying a Quark</code></pre>
+<pre>```
+knative.openshift.service-class=Passthrough
+knative.openshift.route.host=my-quarkus-app.example.com
+```</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Build and push the Quarkus application:</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Build the application: <code>mvn clean package</code>.</p>
+</li>
+<li>
+<p>Create a Docker image: <code>docker build -t image-registry/&lt;namespace&gt;/&lt;app-name&gt;:&lt;tag&gt; .</code>.</p>
+</li>
+<li>
+<p>Push the image to your image registry: <code>docker push image-registry/&lt;namespace&gt;/&lt;app-name&gt;:&lt;tag&gt;</code>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Deploy the application using the Dev profile:</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Apply the Knative Service configuration:</p>
+<div class="literalblock">
+<div class="content">
+<pre>```
+kn service create --image image-registry/&lt;namespace&gt;/&lt;app-name&gt;:&lt;tag&gt; --env KNATIVE_DEV=true
+```</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Test the deployment:</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Get the Knative Service URL: `kn service describe &lt;service-name&gt; --output jsonpath='{.status.url)'.</p>
+</li>
+<li>
+<p>Access the application using the provided URL.</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Daily Self-Assessment:</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Q: What is the purpose of using the Dev profile when deploying a Quarkus application on OpenShift Serverless?</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>A: The Dev profile is used for local development and testing of serverless applications. It allows developers to test their applications on their local machines before deploying them to a production-like environment. This profile is useful for debugging and ensuring that the application behaves as expected in a serverless context.</strong></p>
+</div>
 </div>
 </div>
 <nav class="pagination">

@@ -363,21 +363,31 @@
 </aside>
 <article class="doc">
 <h1 class="page">Event-Driven Architecture with Knative</h1>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">== Event-Driven Architecture with Knative
-
-Event-Driven Architecture (EDA) with Knative focuses on building applications that react to events and triggers. Knative, a Kubernetes-based platform, facilitates the deployment and management of serverless workloads.
-
-- **Concept**: EDA with Knative involves creating event producers and consumers. Producers generate events, while consumers process these events. Knative Brokers and Eventing components enable the decoupling of these producers and consumers, allowing for asynchronous communication.
-
-- **Real-World Use Case**: Imagine an e-commerce platform where product availability updates trigger notifications to customers who have shown interest in out-of-stock items. Here, the update of product status in the database serves as an event, which is picked up by a Knative Broker and delivered to the appropriate consumer (notification service).
-
-- **Code/Config Example**: This would involve setting up a Knative Serving resource for the event producer and configuring a Knative Eventing Sink for the consumer. The producer would publish CloudEvents, which the Broker would route to the designated consumer.
-
-- **Daily Self-Assessment**: Reflect on how event-driven architecture can improve the scalability and resilience of your applications. Consider scenarios where decoupling components through events could simplify development and maintenance.
-
-- **Practical To-Do Exercise**: Implement a simple event-driven workflow using Knative. Create an event producer that generates a CloudEvent upon a specific action (e.g., a new entry in a database) and configure a consumer to process this event (e.g., sending an email notification).</code></pre>
+<div class="sect1">
+<h2 id="_event_driven_architecture_with_knative"><a class="anchor" href="#_event_driven_architecture_with_knative"></a>Event-Driven Architecture with Knative</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Event-Driven Architecture (EDA) with Knative focuses on building applications that react to events and triggers. Knative, a Kubernetes-based platform, facilitates the deployment and management of serverless workloads.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Concept</strong>: EDA with Knative involves creating event producers and consumers. Producers generate events, while consumers process these events. Knative Brokers and Eventing components enable the decoupling of these producers and consumers, allowing for asynchronous communication.</p>
+</li>
+<li>
+<p><strong>Real-World Use Case</strong>: Imagine an e-commerce platform where product availability updates trigger notifications to customers who have shown interest in out-of-stock items. Here, the update of product status in the database serves as an event, which is picked up by a Knative Broker and delivered to the appropriate consumer (notification service).</p>
+</li>
+<li>
+<p><strong>Code/Config Example</strong>: This would involve setting up a Knative Serving resource for the event producer and configuring a Knative Eventing Sink for the consumer. The producer would publish CloudEvents, which the Broker would route to the designated consumer.</p>
+</li>
+<li>
+<p><strong>Daily Self-Assessment</strong>: Reflect on how event-driven architecture can improve the scalability and resilience of your applications. Consider scenarios where decoupling components through events could simplify development and maintenance.</p>
+</li>
+<li>
+<p><strong>Practical To-Do Exercise</strong>: Implement a simple event-driven workflow using Knative. Create an event producer that generates a CloudEvent upon a specific action (e.g., a new entry in a database) and configure a consumer to process this event (e.g., sending an email notification).</p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 <nav class="pagination">

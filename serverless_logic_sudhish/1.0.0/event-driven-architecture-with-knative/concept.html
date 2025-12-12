@@ -364,26 +364,34 @@
 </aside>
 <article class="doc">
 <h1 class="page">Concept</h1>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">= Concept: kn workflow CLI
-
-The kn workflow CLI (Command Line Interface) is a powerful tool designed for managing and executing serverless workflows on OpenShift Serverless. It provides a simple and intuitive way to interact with Knative Serving and Eventing components, enabling developers to create, deploy, and manage serverless applications efficiently.
-
-The kn CLI offers several key functionalities:
-
-1. **Workflow Creation**: You can create workflow definitions using YAML or JSON files, describing the sequence of tasks, their dependencies, and the resources they require.
-
-2. **Workflow Execution**: Once a workflow is defined, you can execute it using the `kn workflow deploy` command, triggering the specified tasks in the correct order.
-
-3. **Workflow Monitoring**: The CLI allows you to monitor the status and progress of your workflows, providing real-time insights into the execution of individual tasks.
-
-4. **Workflow Updates**: You can update existing workflows by modifying the definition files and redeploying them using the `kn workflow update` command.
-
-5. **Workflow Deletion**: When a workflow is no longer needed, you can remove it using the `kn workflow delete` command, ensuring that resources are cleaned up appropriately.
-
-By leveraging the kn workflow CLI, developers can streamline the development, deployment, and management of serverless applications on OpenShift Serverless, focusing on business logic rather than infrastructure concerns.</code></pre>
+<h1 id="_concept_kn_workflow_cli" class="sect0"><a class="anchor" href="#_concept_kn_workflow_cli"></a>Concept: kn workflow CLI</h1>
+<div class="paragraph">
+<p>The kn workflow CLI (Command Line Interface) is a powerful tool designed for managing and executing serverless workflows on OpenShift Serverless. It provides a simple and intuitive way to interact with Knative Serving and Eventing components, enabling developers to create, deploy, and manage serverless applications efficiently.</p>
 </div>
+<div class="paragraph">
+<p>The kn CLI offers several key functionalities:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Workflow Creation</strong>: You can create workflow definitions using YAML or JSON files, describing the sequence of tasks, their dependencies, and the resources they require.</p>
+</li>
+<li>
+<p><strong>Workflow Execution</strong>: Once a workflow is defined, you can execute it using the <code>kn workflow deploy</code> command, triggering the specified tasks in the correct order.</p>
+</li>
+<li>
+<p><strong>Workflow Monitoring</strong>: The CLI allows you to monitor the status and progress of your workflows, providing real-time insights into the execution of individual tasks.</p>
+</li>
+<li>
+<p><strong>Workflow Updates</strong>: You can update existing workflows by modifying the definition files and redeploying them using the <code>kn workflow update</code> command.</p>
+</li>
+<li>
+<p><strong>Workflow Deletion</strong>: When a workflow is no longer needed, you can remove it using the <code>kn workflow delete</code> command, ensuring that resources are cleaned up appropriately.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>By leveraging the kn workflow CLI, developers can streamline the development, deployment, and management of serverless applications on OpenShift Serverless, focusing on business logic rather than infrastructure concerns.</p>
 </div>
 <nav class="pagination">
   <span class="prev"><a href="event-driven-architecture-with-knative.html">Event-Driven Architecture with Knative</a></span>

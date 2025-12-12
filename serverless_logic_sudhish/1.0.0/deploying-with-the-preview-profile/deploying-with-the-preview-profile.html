@@ -363,21 +363,31 @@
 </aside>
 <article class="doc">
 <h1 class="page">Deploying with the Preview Profile</h1>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">== Deploying with the Preview Profile
-
-The Preview Profile in OpenShift Serverless is designed for testing and validation purposes before deploying to production. It provides a staging environment that closely mirrors the production setup. This profile allows developers to preview the changes and ensure they function as expected in a controlled environment.
-
-- **Concept**: The Preview Profile is a deployment strategy that creates a separate environment for testing changes. It's a step between development and production, allowing for final checks before going live.
-
-- **Real-World Use Case**: Imagine you've developed a new feature for your application. You've tested it thoroughly in the development environment. Now, you want to see how it performs in an environment that closely resembles your production setup without affecting the live users. This is where the Preview Profile comes in.
-
-- **Code/Config Example**: To deploy with the Preview Profile, you would use the `knative-openshift-addons` add-on and configure your `knative-serving` and `knative-eventing` resources accordingly in the `KnativeServing` and `KnativeEventing` YAML files.
-
-- **Daily Self-Assessment**: Regularly review the functionality of your application in the Preview environment. Check if the new changes interact correctly with the existing system and if there are any unforeseen side effects.
-
-- **Practical To-Do Exercise**: Try deploying a simple application with the Preview Profile. Monitor its behavior and compare it with your development and production environments. Reflect on the differences and the benefits of using a Preview Profile.</code></pre>
+<div class="sect1">
+<h2 id="_deploying_with_the_preview_profile"><a class="anchor" href="#_deploying_with_the_preview_profile"></a>Deploying with the Preview Profile</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Preview Profile in OpenShift Serverless is designed for testing and validation purposes before deploying to production. It provides a staging environment that closely mirrors the production setup. This profile allows developers to preview the changes and ensure they function as expected in a controlled environment.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Concept</strong>: The Preview Profile is a deployment strategy that creates a separate environment for testing changes. It&#8217;s a step between development and production, allowing for final checks before going live.</p>
+</li>
+<li>
+<p><strong>Real-World Use Case</strong>: Imagine you&#8217;ve developed a new feature for your application. You&#8217;ve tested it thoroughly in the development environment. Now, you want to see how it performs in an environment that closely resembles your production setup without affecting the live users. This is where the Preview Profile comes in.</p>
+</li>
+<li>
+<p><strong>Code/Config Example</strong>: To deploy with the Preview Profile, you would use the <code>knative-openshift-addons</code> add-on and configure your <code>knative-serving</code> and <code>knative-eventing</code> resources accordingly in the <code>KnativeServing</code> and <code>KnativeEventing</code> YAML files.</p>
+</li>
+<li>
+<p><strong>Daily Self-Assessment</strong>: Regularly review the functionality of your application in the Preview environment. Check if the new changes interact correctly with the existing system and if there are any unforeseen side effects.</p>
+</li>
+<li>
+<p><strong>Practical To-Do Exercise</strong>: Try deploying a simple application with the Preview Profile. Monitor its behavior and compare it with your development and production environments. Reflect on the differences and the benefits of using a Preview Profile.</p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 <nav class="pagination">

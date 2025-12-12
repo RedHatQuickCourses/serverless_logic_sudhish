@@ -364,29 +364,45 @@
 </aside>
 <article class="doc">
 <h1 class="page">Real</h1>
+<h1 id="_real_world_use_case_quarkus_workflow_project_for_an_e_commerce_platform" class="sect0"><a class="anchor" href="#_real_world_use_case_quarkus_workflow_project_for_an_e_commerce_platform"></a>Real-World Use Case: Quarkus Workflow Project for an E-commerce Platform</h1>
+<div class="sect1">
+<h2 id="_concept"><a class="anchor" href="#_concept"></a>Concept</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In this section, we&#8217;ll explore a real-world use case for Quarkus Workflow Projects, specifically focusing on an e-commerce platform. This example will illustrate how Quarkus Workflows can be utilized to automate and manage business processes, such as order processing, inventory updates, and customer notifications.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_real_world_use_case"><a class="anchor" href="#_real_world_use_case"></a>Real-World Use Case</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Consider an e-commerce platform that needs to handle a high volume of orders, manage inventory levels, and send automated notifications to customers. We can implement a Quarkus Workflow Project to streamline these processes.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Order Processing</strong>: When a customer places an order, a Quarkus Workflow can be triggered to validate the order, check inventory levels, and update the order status.</p>
+</li>
+<li>
+<p><strong>Inventory Management</strong>: The workflow can also manage inventory updates by deducting the ordered items and sending notifications when stock levels are low.</p>
+</li>
+<li>
+<p><strong>Customer Notifications</strong>: Automated email or SMS notifications can be sent to customers at various stages of the order lifecycle, such as order confirmation, shipping updates, and delivery notifications.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_codeconfig_example"><a class="anchor" href="#_codeconfig_example"></a>Code/Config Example</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Below is a simplified example of a Quarkus Workflow Project for the e-commerce platform use case. This example demonstrates a workflow for order processing.</p>
+</div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">= Real-World Use Case: Quarkus Workflow Project for an E-commerce Platform
-
-== Concept
-
-In this section, we'll explore a real-world use case for Quarkus Workflow Projects, specifically focusing on an e-commerce platform. This example will illustrate how Quarkus Workflows can be utilized to automate and manage business processes, such as order processing, inventory updates, and customer notifications.
-
-== Real-World Use Case
-
-Consider an e-commerce platform that needs to handle a high volume of orders, manage inventory levels, and send automated notifications to customers. We can implement a Quarkus Workflow Project to streamline these processes.
-
-1. **Order Processing**: When a customer places an order, a Quarkus Workflow can be triggered to validate the order, check inventory levels, and update the order status.
-2. **Inventory Management**: The workflow can also manage inventory updates by deducting the ordered items and sending notifications when stock levels are low.
-3. **Customer Notifications**: Automated email or SMS notifications can be sent to customers at various stages of the order lifecycle, such as order confirmation, shipping updates, and delivery notifications.
-
-== Code/Config Example
-
-Below is a simplified example of a Quarkus Workflow Project for the e-commerce platform use case. This example demonstrates a workflow for order processing.
-
-[source, java]
-----
-import org.quarkus.agroal.tck.entity.Product;
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">import org.quarkus.agroal.tck.entity.Product;
 import org.quarkus.quarkus.test.util.Database;
 
 import javax.enterprise.context.ApplicationScoped;
@@ -415,15 +431,25 @@ public class OrderProcessingWorkflow {
         // Send customer notifications
         // ...
     }
-}
-----
-
-== Daily Self-Assessment
-
-1. **Question**: What are the key benefits of using a Quarkus Workflow Project for an e-commerce platform?
-   **Answer**: Quarkus Workflow Projects can automate and manage business processes, such as order processing, inventory updates, and customer notifications, leading to increased efficiency, reduced manual errors, and improved customer experience.
-
-2. **</code></pre>
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_daily_self_assessment"><a class="anchor" href="#_daily_self_assessment"></a>Daily Self-Assessment</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Question</strong>: What are the key benefits of using a Quarkus Workflow Project for an e-commerce platform?
+<strong>Answer</strong>: Quarkus Workflow Projects can automate and manage business processes, such as order processing, inventory updates, and customer notifications, leading to increased efficiency, reduced manual errors, and improved customer experience.</p>
+</li>
+<li>
+<p>**</p>
+</li>
+</ol>
+</div>
 </div>
 </div>
 <nav class="pagination">

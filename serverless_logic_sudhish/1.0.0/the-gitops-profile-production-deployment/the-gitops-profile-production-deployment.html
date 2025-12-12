@@ -363,17 +363,17 @@
 </aside>
 <article class="doc">
 <h1 class="page">The GitOps Profile &amp; Production Deployment</h1>
-<div id="preamble">
-<div class="sectionbody">
+<div class="paragraph">
+<p>The GitOps Profile &amp; Production Deployment</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>Concept</p>
+</div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">The GitOps Profile &amp; Production Deployment
-=======================================
-
-Concept
--------
-
-GitOps is a way of implementing Continuous Deployment for cloud-native applications. It leverages Git as the single source of truth for infrastructure and applications. In the context of OpenShift Serverless, the GitOps profile ensures that the production environment is always in sync with the configurations and code stored in a Git repository.
+<pre>GitOps is a way of implementing Continuous Deployment for cloud-native applications. It leverages Git as the single source of truth for infrastructure and applications. In the context of OpenShift Serverless, the GitOps profile ensures that the production environment is always in sync with the configurations and code stored in a Git repository.
 
 Real-World Use Case
 -------------------
@@ -397,47 +397,24 @@ spec:
       - image: gcr.io/my-project/my-serverless-app
         env:
         - name: TARGET
-          value: "Production"</code></pre>
+          value: "Production"
+
+
+Daily Self-Assessment
+----------------------
+
+* Can you explain what GitOps is and why it's beneficial for production deployments?
+* How would you ensure that your Git repository accurately reflects the desired state of your production environment?
+* What steps would you take to monitor and troubleshoot discrepancies between your Git repository and the actual production state?
+
+Practical To-Do Exercise
+------------------------
+
+1. Set up a Git repository to manage your serverless application's configurations and code.
+2. Configure Argo CD or a similar GitOps tool to synchronize your OpenShift environment with your Git repository.
+3. Make a change to your application's configuration, commit it to the Git repository, and observe how the change is automatically applied to your OpenShift production environment.
+4. Simulate an error (e.g., incorrect configuration) and verify that the GitOps tool detects the discrepancy and attempts</pre>
 </div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_daily_self_assessment"><a class="anchor" href="#_daily_self_assessment"></a>Daily Self-Assessment</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>Can you explain what GitOps is and why it&#8217;s beneficial for production deployments?</p>
-</li>
-<li>
-<p>How would you ensure that your Git repository accurately reflects the desired state of your production environment?</p>
-</li>
-<li>
-<p>What steps would you take to monitor and troubleshoot discrepancies between your Git repository and the actual production state?</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_practical_to_do_exercise"><a class="anchor" href="#_practical_to_do_exercise"></a>Practical To-Do Exercise</h2>
-<div class="sectionbody">
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Set up a Git repository to manage your serverless application&#8217;s configurations and code.</p>
-</li>
-<li>
-<p>Configure Argo CD or a similar GitOps tool to synchronize your OpenShift environment with your Git repository.</p>
-</li>
-<li>
-<p>Make a change to your application&#8217;s configuration, commit it to the Git repository, and observe how the change is automatically applied to your OpenShift production environment.</p>
-</li>
-<li>
-<p>Simulate an error (e.g., incorrect configuration) and verify that the GitOps tool detects the discrepancy and attempts</p>
-</li>
-</ol>
 </div>
 </div>
 </div>
