@@ -1,6 +1,6 @@
 #  Practical To-Do Exercise
 
-```
+
 = Practical To-Do Exercise
 
 == Deploying with the Dev Profile
