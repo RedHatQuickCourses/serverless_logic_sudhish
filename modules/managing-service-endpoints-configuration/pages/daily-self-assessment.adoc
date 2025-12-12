@@ -1,6 +1,5 @@
 #  Daily Self-Assessment
 
-```
 = Daily Self-Assessment
 
 == Purpose

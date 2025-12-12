@@ -1,6 +1,5 @@
 #  Real
 
-```
 = Real-World Use Case: Quarkus Workflow Project for an E-commerce Platform
 
 == Concept

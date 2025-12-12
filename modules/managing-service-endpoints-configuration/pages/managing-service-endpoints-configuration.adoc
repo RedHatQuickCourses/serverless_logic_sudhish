@@ -1,6 +1,5 @@
 #  Managing Service Endpoints & Configuration
 
-```
 Managing Service Endpoints & Configuration
 =========================================
 
@@ -29,4 +28,4 @@ Practical To-Do Exercise
 ------------------------
 
 * Hands-on tasks to apply the learned concepts, such as modifying a Quarkus project to use environment-specific service endpoints.
-```
+

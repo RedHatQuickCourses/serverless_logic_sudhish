@@ -1,6 +1,5 @@
 #  Deploying with the Preview Profile
 
-```
 == Deploying with the Preview Profile
 
 The Preview Profile in OpenShift Serverless is designed for testing and validation purposes before deploying to production. It provides a staging environment that closely mirrors the production setup. This profile allows developers to preview the changes and ensure they function as expected in a controlled environment.
@@ -14,4 +13,4 @@ The Preview Profile in OpenShift Serverless is designed for testing and validati
 - **Daily Self-Assessment**: Regularly review the functionality of your application in the Preview environment. Check if the new changes interact correctly with the existing system and if there are any unforeseen side effects.
 
 - **Practical To-Do Exercise**: Try deploying a simple application with the Preview Profile. Monitor its behavior and compare it with your development and production environments. Reflect on the differences and the benefits of using a Preview Profile.
-```
+

@@ -1,6 +1,5 @@
 #  Real-World Use Case
 
-```
 == Real-World Use Case: Serverless Logic for an E-commerce Platform
 
 In this real-world use case, we'll explore how OpenShift Serverless Logic can be utilized to build a scalable and efficient e-commerce platform.
@@ -33,5 +32,4 @@ Here's a simplified example of the application.properties file for the Order Ser
 
 [SNIPPET: Order Service application.properties]
 
-```
 # Database connection settings

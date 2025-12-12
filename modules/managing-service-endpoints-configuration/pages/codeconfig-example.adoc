@@ -1,6 +1,5 @@
 #  Code/Config Example
 
-```
 == Deploying with the Dev Profile
 - Concept
 - Real-World Use Case
@@ -63,7 +62,6 @@
 - Code/Config Example
 - Daily Self-Assessment
 - Practical To-Do Exercise
-```
 
 ## Code/Config Example: Deploying with the Dev Profile
 

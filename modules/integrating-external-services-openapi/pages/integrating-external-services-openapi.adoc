@@ -1,6 +1,5 @@
 #  Integrating External Services (OpenAPI)
 
-```
 == Integrating External Services (OpenAPI)
 
 This section focuses on integrating external services into your Quarkus project using OpenAPI specifications.
@@ -14,4 +13,4 @@ This section focuses on integrating external services into your Quarkus project 
 - **Daily Self-Assessment**: Reflect on what you've learned each day. This could involve identifying potential challenges in integrating external services and proposing solutions based on the OpenAPI concepts covered.
 
 - **Practical To-Do Exercise**: Apply your knowledge by completing exercises that involve integrating a real external service into a Quarkus project using OpenAPI. This will solidify your understanding and prepare you for real-world application.
-```
+

@@ -1,6 +1,5 @@
 #  Concept
 
-```
 = Concept: kn workflow CLI
 
 The kn workflow CLI (Command Line Interface) is a powerful tool designed for managing and executing serverless workflows on OpenShift Serverless. It provides a streamlined way to interact with Knative Serving and Eventing components, enabling developers to create, deploy, and manage serverless applications efficiently.
@@ -18,4 +17,4 @@ The kn CLI offers several key functionalities:
 5. **Local Execution**: You can test your workflows locally using the `kn workflow run` command, which simulates the Knative environment and helps identify issues before deploying to a production cluster.
 
 By mastering the kn workflow CLI, developers can effectively manage serverless applications on OpenShift Serverless, ensuring smooth deployment, execution, and maintenance of their workflows.
-```
+

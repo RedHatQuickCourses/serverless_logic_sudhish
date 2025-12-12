@@ -1,6 +1,5 @@
 #  Securing Service Calls
 
-```
 == Securing Service Calls
 
 Securing service calls is crucial to protect sensitive data and maintain system integrity. This section covers various authentication methods to safeguard your OpenShift Serverless Logic applications.
@@ -14,4 +13,4 @@ Securing service calls is crucial to protect sensitive data and maintain system 
 - **Daily Self-Assessment**: Reflect on what you've learned about securing service calls and how to apply it in your projects.
 
 - **Practical To-Do Exercise**: Apply your knowledge by setting up and testing authentication for your services using the provided code examples.
-```
+

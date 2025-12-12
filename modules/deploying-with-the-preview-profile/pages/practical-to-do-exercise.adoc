@@ -1,6 +1,5 @@
 #  Practical To-Do Exercise
 
-```
 = Practical To-Do Exercise
 
 == Deploying with the Dev Profile
@@ -48,6 +47,4 @@
 
 *A: The Dev profile is used for local development and testing of serverless applications. It allows developers to test their applications on their local machines before deploying them to a production-like environment. This profile is useful for debugging and ensuring that the application behaves as expected in a serverless context.*
 
-**Example:**
 
-When deploying a Quark

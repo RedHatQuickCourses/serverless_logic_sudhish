@@ -1,6 +1,5 @@
 #  Introduction to Workflow Persistence
 
-```
 == Introduction to Workflow Persistence
 
 Workflow persistence is the ability to store and retrieve the state of a workflow, allowing it to be resumed from the last known good state in case of interruptions. This concept is crucial for long-running or stateful workflows.
@@ -14,4 +13,4 @@ Workflow persistence is the ability to store and retrieve the state of a workflo
 - **Daily Self-Assessment**: Reflect on what you've learned about workflow persistence and its importance in real-world applications.
 
 - **Practical To-Do Exercise**: Set up a simple workflow with persistence using PostgreSQL in a Quarkus project.
-```
+

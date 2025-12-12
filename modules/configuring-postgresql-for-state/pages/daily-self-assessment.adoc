@@ -1,6 +1,5 @@
 #  Daily Self-Assessment
 
-```
 = Daily Self-Assessment
 
 == Purpose
@@ -40,6 +39,5 @@ The Daily Self-Assessment is designed to reinforce your understanding of the day
    - Identify any challenges you faced and how you overcame them.
    - Plan what you will focus on learning tomorrow to build upon today's knowledge.
 
-```
 
 This Daily Self-Assessment is designed to test your understanding of the Kn workflow CLI and Quarkus project structure,

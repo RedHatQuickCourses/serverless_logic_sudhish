@@ -1,6 +1,5 @@
 #  Event-Driven Architecture with Knative
 
-```
 == Event-Driven Architecture with Knative
 
 Event-Driven Architecture (EDA) with Knative focuses on building applications that react to events and triggers. Knative, a Kubernetes-based platform, facilitates the deployment and management of serverless workloads.
@@ -14,4 +13,4 @@ Event-Driven Architecture (EDA) with Knative focuses on building applications th
 - **Daily Self-Assessment**: Reflect on how event-driven architecture can improve the scalability and resilience of your applications. Consider scenarios where decoupling components through events could simplify development and maintenance.
 
 - **Practical To-Do Exercise**: Implement a simple event-driven workflow using Knative. Create an event producer that generates a CloudEvent upon a specific action (e.g., a new entry in a database) and configure a consumer to process this event (e.g., sending an email notification).
-```
+

@@ -1,6 +1,5 @@
 #  Deploying with the Dev Profile
 
-```
 == Deploying with the Dev Profile
 
 The Dev Profile in OpenShift Serverless Logic is designed for developers to test and debug their applications locally before deployment. It provides a lightweight, single-node environment that mimics the behavior of the production cluster.
@@ -14,4 +13,4 @@ The Dev Profile in OpenShift Serverless Logic is designed for developers to test
 - **Daily Self-Assessment**: Questions to reflect on what was learned about using the Dev Profile, such as its benefits and limitations.
 
 - **Practical To-Do Exercise**: Hands-on tasks to practice deploying a Quarkus application using the Dev Profile, like modifying an existing project to use the Dev Profile and verifying the deployment.
-```
+

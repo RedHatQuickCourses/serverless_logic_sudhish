@@ -1,6 +1,5 @@
 #  Configuring PostgreSQL for State
 
-```
 == Configuring PostgreSQL for State
 
 Configuring PostgreSQL for State involves setting up and integrating a PostgreSQL database to provide persistence for Knative (kn) workflows. This ensures that workflow state is stored and can be retrieved, enabling reliable and consistent execution across multiple invocations.
@@ -16,4 +15,4 @@ Configuring PostgreSQL for State involves setting up and integrating a PostgreSQ
 - **Backup and Recovery**: Establish a backup strategy to safeguard workflow state data and ensure recovery options are in place.
 
 This configuration enables workflows to maintain state between invocations, which is crucial for complex, long-running processes or when workflows need to coordinate with external systems.
-```
+

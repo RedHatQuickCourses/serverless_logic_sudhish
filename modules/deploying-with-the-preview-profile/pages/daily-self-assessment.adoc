@@ -1,6 +1,5 @@
 #  Daily Self-Assessment
 
-```
 = Daily Self-Assessment
 
 == Purpose
@@ -43,4 +42,3 @@ quarkus/
 
 3. **GitOps Profile**: This profile is used for production deployments and ongoing management. It leverages Git as the single source of truth for the desired state of the system, ensuring that the actual state converges to the desired state through automated processes.
 
-=== Question 4: How can OpenAPI specifications be
