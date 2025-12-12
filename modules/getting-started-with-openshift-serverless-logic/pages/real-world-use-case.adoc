@@ -1,6 +1,6 @@
 #  Real-World Use Case
 
-```
+
 == Real-World Use Case: Serverless Logic for an E-commerce Platform
 
 In this real-world use case, we'll explore how OpenShift Serverless Logic can be utilized to build a scalable and efficient e-commerce platform.
@@ -34,6 +34,6 @@ To implement this use case, follow these steps:
 6. **Link workflows to Knative Brokers** for producing and consuming CloudEvents, enabling event-driven architecture for features like order notifications and inventory updates.
 
 By following this approach, you can build a robust, scalable, and efficient e-commerce platform using OpenShift Serverless Logic.
-```
+
 
 This real-world use case demonstrates how OpenShift Serverless Logic can be applied to create a scalable e-commerce platform with various microservices. It highlight
